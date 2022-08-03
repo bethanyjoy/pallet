@@ -75,6 +75,11 @@ body {
 	color: #3D4148;
 }
 
+h1 {
+	font-family: "MessinaSansLumi-SemiBold";
+	letter-spacing: -0.6px;
+}
+
 p {
 	font-weight:300;
 }
@@ -126,6 +131,7 @@ iframe {
 
 #logo {
 	margin-bottom:28px;
+	text-decoration: none;
 }
 
 #logo h1, svg {
@@ -156,6 +162,11 @@ iframe {
 	display:block;
 	margin-bottom:24px;
 	margin-top:24px;
+	margin-left:-8px;
+}
+
+#sidebar li {
+	margin-bottom:1px;
 }
 
 #sidebar a {
@@ -183,10 +194,14 @@ iframe {
 	text-decoration:none;
 	color: #6C6F75;
 	font-size: 15px;
+	width:95%;
+	border-radius:4px;
+	padding: 0px 8px;
 }
 
 #sidebar li a:hover {
 	color: #282A30;
+	background-color: #EFF1F4;
 }
 
 #mainContent h1 {
@@ -233,9 +248,9 @@ h2 {
 .propType {
 	font-family: "SFMono-Light", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-weight:200;
-	color: #6AB586;
+	color: #91959C;
 	margin-left: 3px;
-	font-size:15.5px;
+	font-size:16px;
 }
 
 .propDescription {
@@ -249,6 +264,10 @@ h2 {
 	margin-bottom: 10px;
 }
 
+#mainContent .props p {
+	margin-bottom: 0;
+}
+
 .tabList {
 	margin-bottom:20px;
 	display:flex;
@@ -259,8 +278,11 @@ h2 {
 }
 
 #exampleText {
-	margin-bottom:20px;
 /*	display:block;*/
+}
+
+#mainContent p {
+	margin-bottom:20px;
 }
 
 button {
@@ -303,6 +325,13 @@ button:hover {
     border-color: #6C6F75;
 	border: solid 2px;
 	padding: 9px 13px;
+}
+
+code {
+	padding: .22rem .25rem;
+	font-family: "SFMono-Light", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	background-color: #EFF1F4;
+	border-radius: 4px;
 }
 
 
