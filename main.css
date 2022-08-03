@@ -204,6 +204,11 @@ iframe {
 	background-color: #EFF1F4;
 }
 
+a.active {
+	color: #282A30;
+	background-color: #EFF1F4;
+}
+
 #mainContent h1 {
 	font-size: 34px;
 	font-weight: 500;
