@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link href="main.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="sidebar">
+		
+		<div id="logo">
+			<h1>pallet</h1>
+			<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="10" cy="10" r="10"/>
+			</svg>
+		</div>
+		
+		<p id="tagline">Components and styles used to design Lumi interfaces</p>
+		
+		<a href="#" class="externalLink">
+			Figma community file<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+				<path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+				<path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+			</svg>
+		</a>
+
+		<ul>
+			<li><a href="#">All</a></li>
+			<li><a href="#">Action list</a></li>
+			<li><a href="#">Autocomplete</a></li>
+			<li><a href="#">Avatar</a></li>
+			<li><a href="#">Badge</a></li>
+			<li><a href="#">Banner</a></li>
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button group</a></li>
+			<li><a href="#">Callout card</a></li>
+			<li><a href="#">Card</a></li>
+			<li><a href="#">Checkbox</a></li>
+			<li><a href="#">Choice list</a></li>
+			<li><a href="#">Data table</a></li>
+			<li><a href="#">Date picker</a></li>
+			<li><a href="#">Description list</a></li>
+			<li><a href="#">Drop zone</a></li>
+			<li><a href="#">Empty state</a></li>
+			<li><a href="#">Exception list</a></li>
+			<li><a href="#">Filter</a></li>
+			<li><a href="#">Footer help</a></li>
+			<li><a href="#">Form layout</a></li>
+			<li><a href="#">Index table</a></li>
+			<li><a href="#">Inline error</a></li>
+			<li><a href="#">Link</a></li>
+			<li><a href="#">List</a></li>
+			<li><a href="#">Lockups</a></li>
+			<li><a href="#">Media card</a></li>
+			<li><a href="#">Messaging</a></li>
+			<li><a href="#">Modal</a></li>
+			<li><a href="#">Navigation</a></li>
+			<li><a href="#">Option list</a></li>
+			<li><a href="#">Page</a></li>
+			<li><a href="#">Page actions</a></li>
+			<li><a href="#">Pagination</a></li>
+			<li><a href="#">Popover</a></li>
+			<li><a href="#">Progress bar</a></li>
+			<li><a href="#">Radio button</a></li>
+			<li><a href="#">Range slider</a></li>
+			<li><a href="#">Resource list</a></li>
+			<li><a href="#">Result</a></li>
+			<li><a href="#">Save bar</a></li>
+			<li><a href="#">Search</a></li>
+			<li><a href="#">Segmented input</a></li>
+			<li><a href="#">Select</a></li>
+			<li><a href="#">Setting toggle</a></li>
+			<li><a href="#">Sheet</a></li>
+			<li><a href="#">Skeleton</a></li>
+			<li><a href="#">Spinner</a></li>
+			<li><a href="#">Switch</a></li>
+			<li><a href="#">Tabs</a></li>
+			<li><a href="#">Tag</a></li>
+			<li><a href="#">Text field</a></li>
+			<li><a href="#">Thumbnail</a></li>
+			<li><a href="#">Toast</a></li>
+			<li><a href="#">Toggle</a></li>
+			<li><a href="#">Tooltip</a></li>
+			<li><a href="#">Video thumbnail</a></li>
+		</ul>
+		
+		<p id="credit">Made by <a href="#">bethany.design</a></p>
+
+	</div>
+	
+	<div id="mainContent">
+		
+		<h1>Button</h1>
+		
+		<p class="description">Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “View details”.</p>
+		
+		<h2>Examples</h2>
+		
+		<iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FB1SvADcCG4a8LbE224mcjT%2FPallet-Design-System%3Fpage-id%3D1856%253A486623%26node-id%3D1878%253A479395%26viewport%3D2649%252C-2599%252C1%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+		
+		<h2>Props</h2>
+		
+			<ul class="props">
+				<li>
+					<p>
+						<span class="propName">type</span>
+						<span class="propType">"basic" | "primary" | "ghost" | "outline" | "plain"</span>
+					</p>
+					<p class="propDescription">Description</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">destructive</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Indicates a dangerous or potentially negative action</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">size</span>
+						<span class="propType">"default" | "slim" | "large"</span>
+					</p>
+					<p class="propDescription">Changes the size of the button, giving it more or less padding</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">textAlign</span>
+						<span class="propType">"center" | "left"</span>
+					</p>
+					<p class="propDescription">Changes the inner text alignment of the button</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">fullWidth</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Allows the button to grow to the width of its container</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">disclosure</span>
+						<span class="propType">boolean | "down" | "up" | "select"</span>
+					</p>
+					<p class="propDescription">Displays the button with a disclosure icon. Defaults to `down` when set to true</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">icon</span>
+						<span class="propType">any</span>
+					</p>
+					<p class="propDescription">Icon to display to the left of the button content</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">url</span>
+						<span class="propType">string</span>
+					</p>
+					<p class="propDescription">A destination to link to, rendered in the href attribute of a link</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">external</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Forces url to open in a new tab</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">download</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Tells the browser to download the url instead of opening it</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">submit</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Allows the button to submit a form</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">disabled</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Disables the button, disallowing user interaction</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">loading</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Replaces button text with a spinner while a background action is being performed</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">pressed</span>
+						<span class="propType">boolean</span>
+					</p>
+					<p class="propDescription">Sets the button in a pressed state</p>
+				</li>
+				<li>
+					<p>
+						<span class="propName">accessibilityLabel</span>
+						<span class="propType">string</span>
+					</p>
+					<p class="propDescription">Visually hidden text for screen readers</p>
+				</li>	
+			</ul>
+		
+<!--		<h2>Best practices</h2>-->
+	
+	</div>
+
+</body>
+
+</html>
