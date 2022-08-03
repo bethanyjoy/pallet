@@ -265,22 +265,14 @@ h2 {
 		font-size:17px;
 	}
 */
-	
-	#body {
-		width:90%;
-	}
 
   #sidebar {
-		width: calc(100% - 16px)!important;
-		padding: 0px 16px 16px !important;
-		/* overflow-y: hidden !important; */
-		z-index: 2000 !important;
-		display: none;
-		margin-top: 0px;
+	display: none;
   }
 
 	#mainContent {
 		margin: 20px 20px 32px !important;
+		width:90%;
 	}
 	
 }
