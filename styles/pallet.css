@@ -38,7 +38,7 @@ body {
 
 button {
 	
-/*	margin:auto;*/
+	margin:auto;
 	
 	box-sizing: border-box;
 
@@ -105,8 +105,10 @@ button span {
 	
 	}
 
-button:hover {
-	
-	
-	
+@media only screen and (max-width: 800px) {
+  
+  button {
+	background:yellow !important;
+  }
+  
 }
