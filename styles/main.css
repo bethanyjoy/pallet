@@ -26,7 +26,7 @@
 
 	--sansSerif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	--display: "MessinaSansLumi", "SFMono-Regular", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--display: "MessinaSansLumi-Bold", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 	/*	Spacing */
 	
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-  font-family: "MessinaSansLumi";
+  font-family: "MessinaSansLumi-Bold";
   src: url("../fonts/MessinaSansLumi-Bold.woff");
 }
 
@@ -441,5 +441,8 @@ button span {
 	.props li {
 	margin-bottom: 14px;
 }
+	h1 {
+		letter-spacing: -1.5px;
+	}
 	
 }
