@@ -19,14 +19,15 @@ time, mark, audio, video, button {
 	font-size: 17px;
 	color: #3D4148;
 	vertical-align: baseline;
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	font-size: 17px;
@@ -76,12 +77,12 @@ body {
 }
 
 h1 {
-	font-family: "MessinaSansLumi-SemiBold";
+	font-family: "MessinaSansLumi-Bold";
 	letter-spacing: -0.6px;
 }
 
 p {
-	font-weight:300;
+	font-weight:400;
 }
 
 a {
@@ -197,6 +198,7 @@ iframe {
 	width:95%;
 	border-radius:4px;
 	padding: 0px 8px;
+/*	font-weight:500;*/
 }
 
 #sidebar li a:hover {
@@ -218,12 +220,12 @@ a.active {
 .description {
 	font-size:20px;
 	line-height: 160%;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h2 {
 	font-size:22px;
-	font-weight:500;
+	font-weight:600;
 	margin-bottom: 20px;
 	margin-top: 48px;
 }
@@ -233,6 +235,7 @@ h2 {
 .externalLink {
 	text-decoration: none;
 	font-size:15px;
+	font-weight:500;
 }
 
 
@@ -251,7 +254,7 @@ h2 {
 }
 
 .propType {
-	font-family: "SFMono-Light", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	font-weight:200;
 	color: #91959C;
 	margin-left: 3px;
@@ -261,7 +264,7 @@ h2 {
 .propDescription {
 	font-size:13px;
 	color: #6C6F75;
-	font-weight:300;
+	font-weight:400;
 	line-height: 22px;
 }
 
@@ -288,20 +291,6 @@ h2 {
 
 #mainContent p {
 	margin-bottom:20px;
-}
-
-button {
-	padding:0.6rem 0.85rem;
-	border-radius:6px;
-	font-size:15px;
-	font-weight:400;
-	border: 1px solid #DFE1E4;
-	background-color:#fff;
-	line-height: 20px;
-}
-
-button:hover {
-	box-shadow: 0 4px 7px rgba(0,0,0,0.08);
 }
 
 .tabList input[type="radio"] {
@@ -334,10 +323,107 @@ button:hover {
 
 code {
 	padding: .22rem .25rem;
-	font-family: "SFMono-Light", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	background-color: #EFF1F4;
 	border-radius: 4px;
 }
+
+
+
+
+
+
+.exampleFrame {
+	border: 1px solid #DFE1E4;
+	width: calc(100% - 48px);
+	border-radius:12px;
+	text-align:center;
+	background-color:white;
+	padding: 24px;
+}
+
+
+button {
+	
+/*	margin:auto;*/
+	
+	box-sizing: border-box;
+
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 16px;
+	gap: 4px;
+
+	width: 88px;
+	height: 32px;
+
+	/* White */
+
+	background: #FFFFFF;
+	/* Black 6 */
+
+	border: 1px solid #DFE1E4;
+	/* Actions/Button Shadow */
+
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	
+}
+
+
+button span {
+	/* Label */
+
+
+	width: 56px;
+	height: 16px;
+
+	/* Small plus */
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	/* identical to box height */
+
+	letter-spacing: -0.0025em;
+
+	/* Black 2 */
+
+	color: #3D4148;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+	}
+
+button:hover {
+	
+	
+	
+}
+
+
+
+
+
 
 
 
