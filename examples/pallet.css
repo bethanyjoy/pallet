@@ -30,8 +30,8 @@
 
 
 body {
-  margin: 24px;
-  	-webkit-font-smoothing: antialiased;
+  margin: 80px 24px;
+  -webkit-font-smoothing: antialiased;
 }
 	
 	
@@ -105,10 +105,11 @@ button span {
 	
 	}
 
+/*
 @media only screen and (max-width: 800px) {
   
   button {
 	background:yellow !important;
   }
   
-}
+}*/
