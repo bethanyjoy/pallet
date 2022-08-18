@@ -15,7 +15,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 	<link href="styles/normalize.css" rel="stylesheet">
-	<link href="styles/pallet.css" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,21 +28,21 @@
 
 <body>
 
-	<div class="sidebar">
+	<nav>
 		
-		<a class="logo" href="./">
+		<a class="logo" href="index.html">
 			Pallet
-			<img src="assets/logo.png" height="24px" width="24px">
+			<img src="assets/logo.png">
 		</a>
 		
-		<p id="tagline">Components and styles used to design Lumi interfaces</p>
+		<span class="tagline">Components and styles used to design Lumi interfaces</span>
 		
 		<a href="https://www.figma.com/file/B1SvADcCG4a8LbE224mcjT/Pallet-Design-System?node-id=807%3A284811" target="_blank" data-external-link-arrow="true" class="external-link">
 			Figma file
 		</a>
 
 		<ul>
-<!--		<li><a href="index.html" class="active">All</a></li>-->
+			<li><a href="index.html">All</a></li>
 			<li><a href="action-list.html">Action list</a></li>
 			<li><a href="autocomplete.html">Autocomplete</a></li>
 			<li><a href="avatar.html">Avatar</a></li>
@@ -102,161 +101,201 @@
 			<li><a href="video-thumbnail.html">Video thumbnail</a></li>
 		</ul>
 		
-		<p id="credit">Made by <a href="http://bethany.design/">bethany.design</a></p>
+		<span class="credit">Made by <a href="http://bethany.design/">bethany.design</a></span>
 
-	</div>
+	</nav>
 	
 	<main class="main">
 		
 		<section class="intro">	
 			<h1>Checkbox</h1>
-			<p class="description">Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “View details”.</p>
+			<p>The Checkbox component allows user to select multiple items from a list.</p>
 		</section>
 		
 		<section>
 			<h2>Default</h2>
-			<p id="exampleText">
-				Used most in the interface. Only use another style if a button requires more or less visual weight.
+			<p>
+				Donec id elit non mi porta gravida at eget metus.
 			</p>
 			<figure>
-				<label class="checkbox">Label<input type="checkbox"><span class="checkmark"></span></label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<div class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					Label
+				</label>
 			</figure>
 		</section>
 		
 		<section>
 			<h2>Indeterminate</h2>
-			<p id="exampleText">
-				Used most in the interface. Only use another style if a button requires more or less visual weight.
+			<p>
+				Donec id elit non mi porta gravida at eget metus.
 			</p>
 			<figure>
-				<label class="checkbox indeterminate">Label<input type="checkbox"><span class="checkmark"></span></label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<div class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
+						  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					Label
+				</label>
 			</figure>
 		</section>
 		
 		<section>
 			<h2>Disabled</h2>
-			<p id="exampleText">
-				Used most in the interface. Only use another style if a button requires more or less visual weight.
+			<p>
+				Donec id elit non mi porta gravida at eget metus.
 			</p>
 			<figure class="flex-column">
-				<label class="checkbox disabled">Label<input type="checkbox"><span class="checkmark"></span></label>
-				<label class="checkbox disabled checked">Label<input type="checkbox"><span class="checkmark"></span></label>
-				<label class="checkbox disabled checked indeterminate">Label<input type="checkbox"><span class="checkmark"></span></label>
+				<label class="checkbox disabled">
+					<input type="checkbox">
+					<div class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					Label
+				</label>
+				<label class="checkbox disabled checked">
+					<input type="checkbox">
+					<div class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					Label
+				</label>
+				<label class="checkbox disabled checked">
+					<input type="checkbox">
+					<div class="checkmark">
+						<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
+						  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					Label
+				</label>
 			</figure>
 		</section>
 			
 	
-		<section>
+		<section class="props">
 			
 			<h2>Props</h2>
 
-				<ul class="props">
-					<li>
-						<p>
-							<span class="propName">type</span>
-							<span class="propType">'basic' | 'primary' | 'ghost' | 'outline' | 'plain'</span>
-						</p>
-						<p class="propDescription">Description</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">destructive</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Indicates a dangerous or potentially negative action</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">size</span>
-							<span class="propType">'default' | 'slim' | 'large'</span>
-						</p>
-						<p class="propDescription">Changes the size of the button, giving it more or less padding</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">textAlign</span>
-							<span class="propType">'center' | 'left'</span>
-						</p>
-						<p class="propDescription">Changes the inner text alignment of the button</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">fullWidth</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Allows the button to grow to the width of its container</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">disclosure</span>
-							<span class="propType">boolean | 'down' | 'up' | 'select'</span>
-						</p>
-						<p class="propDescription">Displays the button with a disclosure icon. Defaults to `down` when set to true</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">icon</span>
-							<span class="propType">any</span>
-						</p>
-						<p class="propDescription">Icon to display to the left of the button content</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">url</span>
-							<span class="propType">string</span>
-						</p>
-						<p class="propDescription">A destination to link to, rendered in the href attribute of a link</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">external</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Forces url to open in a new tab</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">download</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Tells the browser to download the url instead of opening it</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">submit</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Allows the button to submit a form</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">disabled</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Disables the button, disallowing user interaction</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">loading</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Replaces button text with a spinner while a background action is being performed</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">pressed</span>
-							<span class="propType">boolean</span>
-						</p>
-						<p class="propDescription">Sets the button in a pressed state</p>
-					</li>
-					<li>
-						<p>
-							<span class="propName">accessibilityLabel</span>
-							<span class="propType">string</span>
-						</p>
-						<p class="propDescription">Visually hidden text for screen readers</p>
-					</li>	
-				</ul>
+			<ul>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">type</span>
+						<span class="prop-type">'basic' | 'primary' | 'ghost' | 'outline' | 'plain'</span>
+					</span>
+					<p>Description</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">destructive</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Indicates a dangerous or potentially negative action</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">size</span>
+						<span class="prop-type">'default' | 'slim' | 'large'</span>
+					</span>
+					<p>Changes the size of the button, giving it more or less padding</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">textAlign</span>
+						<span class="prop-type">'center' | 'left'</span>
+					</span>
+					<p>Changes the inner text alignment of the button</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">fullWidth</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Allows the button to grow to the width of its container</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">disclosure</span>
+						<span class="prop-type">boolean | 'down' | 'up' | 'select'</span>
+					</span>
+					<p>Displays the button with a disclosure icon. Defaults to `down` when set to true</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">icon</span>
+						<span class="prop-type">any</span>
+					</span>
+					<p>Icon to display to the left of the button content</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">url</span>
+						<span class="prop-type">string</span>
+					</span>
+					<p>A destination to link to, rendered in the href attribute of a link</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">external</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Forces url to open in a new tab</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">download</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Tells the browser to download the url instead of opening it</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">submit</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Allows the button to submit a form</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">disabled</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Disables the button, disallowing user interaction</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">loading</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Replaces button text with a spinner while a background action is being performed</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">pressed</span>
+						<span class="prop-type">boolean</span>
+					</span>
+					<p>Sets the button in a pressed state</p>
+				</li>
+				<li>
+					<span class="text-row">
+						<span class="prop-name">accessibilityLabel</span>
+						<span class="prop-type">string</span>
+					</span>
+					<p>Visually hidden text for screen readers</p>
+				</li>	
+			</ul>
 		
 		</section>
 		

@@ -28,25 +28,67 @@
 
 	/*	Fonts */
 
-	--font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	--font-display: "MessinaSansLumi-Bold", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	--display: "MessinaSansLumi-Bold", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	
 	/*	Font size */
-
-	--size-tiny: 11px;
-	--size-mini: 12px;
-	--size-small: 13px;
-	--size-medium: 15px;
-	--size-large: 18px;
-	--size-xlarge: 20px;
-	--size-display: 24px;
+	
+	--size-100: 11px; /*11px*/
+	--size-200: 12px; /*12px*/
+	--size-300: 13px; /*13px*/
+	--size-400: 15px; /*15px*/
+	--size-500: 18px; /*18px*/
+	--size-600: 20px; /*20px*/
+	--size-700: 24px; /*24px*/
+	
+	/*	Line height */
+	
+	--lh-100: 13px; /*13px*/
+	--lh-200: 15px; /*15px*/
+	--lh-300: 16px; /*16px*/
+	--lh-400: 18px; /*18px*/
+	--lh-500: 22px; /*22px*/
+	--lh-600: 24px; /*24px*/
+	--lh-700: 29px; /*29px*/
+	
+	--lh-300-p: 20px; /*20px*/
+	--lh-400-p: 24px; /*24px*/
 
 	/* Font weight */
 
 	--normal: 400;
 	--plus: 500;
 	--bold: 600;
+	
+	/* Size & Spacing */
+	
+	--0-5: 4px;
+	--1: 8px;
+	--1-5: 12px;
+	--2: 16px;
+	--2-5: 20px;
+	--3: 24px;
+	--4: 32px;
+	--5: 40px;
+	--6: 48px;
+	--7: 56px;
+	--8: 64px;
+	--10: 80px;
+	
+	/* Border radius */
+	
+	--br-small: 3px;
+	--br-default: 4px;
+	--br-large: 8px;
+	
+	/* Shadow */
+	
+	--shadow-button: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	
+	/* Border */
+	
+	--border: solid 1px rgba(0,0,0,0.1);
 
 }
 
@@ -57,43 +99,96 @@
 
 
 
-/*	Pallet styles */
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - Pallet Design System Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--------------------------------------------------------------------------------------------------------*/
 
 
-figure {
-	padding: 24px;
-	-webkit-font-smoothing: antialiased;
-	font-family: var(--sans-serif);
-	font-weight: var(--normal);
-	font-size: var(--size-small);
-	line-height: 16px;
-	letter-spacing: -0.0025em;
-	border: 1px solid var(--black-6);
-	border-radius: 8px;
-	border-sizing: border-box;
-	width: calc(100% - 48px);
-	margin: 0;
-	display:flex;
-	flex-direction:row;
-	gap: 16px;
-	align-items: center;
+/*----------------------------------------------------*/
+/*  Text styles                                       */
+/*----------------------------------------------------*/
+
+
+/* Text sizes */
+
+.text-size-100 {
+	font-size: var(--size-100);
+	line-height: var(--lh-100);
 }
 
-.flex-column {
-	flex-direction:column;
-	align-items:flex-start;
+.text-size-200 {
+	font-size: var(--size-200);
+	line-height: var(--lh-200);
+}
+
+.text-size-300 {
+	font-size: var(--size-300);
+	line-height: var(--lh-300);
+}
+
+.text-size-400 {
+	font-size: var(--size-400);
+	line-height: var(--lh-400);
+}
+
+.text-size-500 {
+	font-size: var(--size-500);
+	line-height: var(--lh-500);
+}
+
+.text-size-600 {
+	font-size: var(--size-600);
+	line-height: var(--lh-600);
+}
+
+.text-size-700 {
+	font-size: var(--size-700);
+	line-height: var(--lh-700);
+}
+
+
+/* Paragraph styles */
+
+.text-size-300.p {
+	line-height: var(--lh-300-p);
+}
+
+.text-size-400.p {
+	line-height: var(--lh-400-p);
+}
+
+
+/* Paragraph styles */
+
+.plus {
+	font-weight: var(--plus);
+}
+
+.bold {
+	font-weight: var(--bold);
 }
 
 
 
-/* Button */
+
+
+
+/*----------------------------------------------------*/
+/*  Button styles                                     */
+/*----------------------------------------------------*/
+
+
+/* Default button */
 
 button {
 	
 	/* Global */
 
 	align-items: center;
-	border-radius: 4px;
+	border-radius: var(--br-default);
 	box-sizing: border-box;
 	cursor: pointer;
 	display: flex;
@@ -106,23 +201,28 @@ button {
 	
 	/* Sizing */
 
-	padding: 8px 14px;
-	gap: 4px;
-	height: 32px;
+	gap: var(--0-5);
+	height: var(--4);
+	padding: var(--1) 14px;
 
 	/* Color */
 
 	background: var(--white);
 	border: 1px solid var(--black-6);
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--shadow-button);
 	color: var(--black-2);
 	fill: var(--black-3);
+	
+	/* Text */
+	
+	font-size: var(--size-300);
+	font-weight: var(--plus);
 	
 }
 
 button svg {
-	width: 16px;
-	height: 16px;
+	width: var(--2);
+	height: var(--2);
 }
 
 button:hover {
@@ -132,7 +232,6 @@ button:hover {
 button:active {
 	background: var(--black-8);
 }
-
 
 
 /* Primary button */
@@ -152,7 +251,6 @@ button.primary:active {
 }
 
 
-
 /* Minimal button */
 
 button.minimal {
@@ -163,15 +261,14 @@ button.minimal {
 button.minimal:hover {
 	background: var(--black-9);
 	border: 1px solid var(--black-6);
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--shadow-button);
 }
 
 button.minimal:active {
 	background: var(--black-8);
 	border: 1px solid var(--black-6);
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	box-shadow: var(--shadow-button);
 }
-
 
 
 /* Outline button */
@@ -201,9 +298,8 @@ button.plain {
 	box-shadow: none;
 	color: var(--primary);
 	font-weight: var(--normal);
-	gap: 4px;
-	height: 16px;
-	padding: 0px;
+	height: var(--2);
+	padding: 0;
 }
 
 button.plain:hover {
@@ -219,8 +315,6 @@ button.plain:active {
 	color: var(--primary-dark-1);
 	text-decoration: underline;
 }
-
-
 
 
 /* Destructive buttons */
@@ -253,7 +347,6 @@ button.primary.destructive:active {
 }
 
 
-
 /* Disabled buttons */
 
 button.disabled {
@@ -277,77 +370,57 @@ button.plain.disabled {
 }
 
 
-
-/* Spinner */
-
-.spinner {
-	-webkit-animation:spin 1s linear infinite;
-    -moz-animation:spin 1s linear infinite;
-    animation:spin 1s linear infinite;
-}
-
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-
 /* Button sizes */
 
 button.slim {
-	padding: 6px 8px;
+	padding: 6px var(--1);
 	height: 28px;
 }
 
 button.large {
-	padding: 8px 14px;
-	height: 40px;
+	padding: var(--1) 14px;
+	height: var(--5);
 }
 
 
 
-
-
-
-
-/* Styles for checkbox filters */
+/*----------------------------------------------------*/
+/*  Checkbox styles                                   */
+/*----------------------------------------------------*/
 
 
 /* Customize the label (the container) */
 .checkbox {
-	display: block;
-	position: relative;
+	align-items: center;
+	color: var(--black-1);
 	cursor: pointer;
-	-webkit-user-select: none;
+	display: flex;
+	flex-direction: row;
+	gap: var(--1);
+	height: var(--3);
+	user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
-	line-height: 24px;
-	padding-left: 24px;
-	color: var(--black-1);
+	-webkit-user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .checkbox input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
 	height: 0;
+	opacity: 0;
+	position: absolute;
 	width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-	position: absolute;
-	top: 4px;
-	left: 0;
-	height: 16px;
-	width: 16px;
 	border: 1px solid var(--black-6);
+	border-radius: var(--br-small);
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	border-radius: 3px;
+	height: 14px;
+	width: 14px;
 }
 
 /* On mouse-over, change border color */
@@ -362,47 +435,27 @@ button.large {
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-	content: "";
-	position: absolute;
+.checkmark svg {
 	display: none;
 }
 
 /* Show the checkmark when checked */
-.checkbox input:checked ~ .checkmark:after {
+.checkbox input:checked ~ .checkmark svg {
 	display: block;
 }
 
 /* Style the checkmark/indicator */
-.checkbox .checkmark:after {
-	left: 5px;
-	top: 2px;
-	width: 4px;
-	height: 7px;
-	border: solid white;
-	border-width: 0 2px 2px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-/* Style the checkmark/indicator */
-.checkbox.indeterminate .checkmark:after {
-	left: 4px;
-	top: 6px;
-	width: 8px;
-	height: 1px;
-	border: solid white;
-	border-width: 0 0 2px 0;
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
+.checkbox .checkmark svg {
+	fill: var(--white);
+	height: var(--1-5);
+	padding: 1px;
+	width: var(--1-5);
 }
 
 .checkbox.disabled {
+	color: var(--black-4);
 	cursor: none;
 	pointer-events: none;
-	color: var(--black-4);
 }
 
 .checkbox.disabled .checkmark {
@@ -410,19 +463,25 @@ button.large {
 	border: none;
 }
 
-.checkbox.checked .checkmark:after {
+.checkbox.checked .checkmark svg {
 	display: block;
-	border: solid var(--black-4);
-	border-width: 0 2px 2px 0;
-}
-
-.checkbox.checked.indeterminate .checkmark:after {
-	display: block;
-	border: solid var(--black-4);
-	border-width: 0 0 2px 0;
+	fill: var(--black-4);
 }
 
 
+/*----------------------------------------------------*/
+/*  Spinner                                           */
+/*----------------------------------------------------*/
+
+.spinner {
+	-webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
 
@@ -434,38 +493,60 @@ button.large {
 
 
 
-/*	Global Styles */
+
+/*--------------------------------------------------------------------------------------------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - Page Styles - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------*/
+/*  Global Styles                                     */
+/*----------------------------------------------------*/
 
 
 body {
-	color: var(--black-3);
-	display: flex;
-	font-family: var(--font-sans-serif);
-	font-size: var(--size-medium);
-	line-height: 160%;
+	color: var(--black-2);
+	font-family: var(--sans-serif);
+	font-size: var(--size-400);
+	font-weight: var(--normal);
+	letter-spacing: -0.0025em;
+	line-height: var(--size-400);
 	-webkit-font-smoothing: antialiased;
+	display: flex;
+}
+
+p {
+	color: var(--black-3);
+	font-size: var(--size-400);
+	line-height: var(--lh-400-p);
 }
 
 h1 {
 	color: var(--black-1);
-	font-family: var(--font-display);
-	font-size: var(--size-display);
+	font-family: var(--display);
+	font-size: var(--size-700);
 	letter-spacing: -0.6px;
-	margin-bottom: 20px;
+	margin-bottom: var(--2-5);
 	margin-top: 0;
-	-webkit-font-smoothing: antialiased;
+	line-height: var(--lh-700);
 }
 
 h2 {
 	color: var(--black-2);
-	font-size: var(--size-large);
-	font-weight: 600;
-	margin-bottom: 16px;
+	font-size: var(--size-500);
+	font-weight: var(--bold);
+	margin-bottom: var(--2);
 }
 
 a {
 	color: var(--primary);
-	font-weight: 500;
+	font-weight: var(--plus);
 	text-decoration: none;
 }
 
@@ -473,73 +554,42 @@ a:hover {
 	text-decoration: underline;
 }
 
+a[data-external-link-arrow=true]:after {
+	content: "→";
+	display: inline-block;
+	margin-left: .25em;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
 }
 
-li {
-	line-height: 180%;
-}
-
-iframe {
-	border: 1px solid var(--black-6);
-	border-radius: 8px;
-	border-sizing: border-box;
-	width: 100%;
-}
-
 code {
 	background-color: var(--black-7);
-	border-radius: 4px;
-	font-family: var(--font-mono);
+	border-radius: var(--br-default);
+	font-family: var(--mono);
 	padding: .22rem .25rem;
 }
 
 
 
 /*----------------------------------------------------*/
-/*  Page structure                                    */
+/*  Nav styles                                        */
 /*----------------------------------------------------*/
 
-.sidebar {
+
+nav {
 	align-self: flex-start;
-	border-right: solid 1px rgba(0,0,0,0.1);
+	border-right: var(--border);
 	float: left;
 	height: calc(100vh - 128px);
 	overflow: auto;
 	overscroll-behavior: contain;
-	padding: 64px 40px;
+	padding: var(--8) var(--5);
 	position: sticky;
 	top: 0;
-	width: 220px;
-}
-
-.main {
-	flex: 1;
-/*	height: calc(100vw - 128px);*/
-/*	margin-bottom: 24px;*/
-	overflow: auto;
-/*	overscroll-behavior: contain;*/
-	padding: 64px;
-	position: sticky;
-	text-align: left;
-	top: 0;
-	width: 100%;
-}
-
-section {
-	margin-bottom: 56px;
-}
-
-
-/*----------------------------------------------------*/
-/*  Sidebar styles                                    */
-/*----------------------------------------------------*/
-
-
-.sidebar p, ul {
-	display: block;
+	width: 208px;
 }
 
 
@@ -547,88 +597,87 @@ section {
 
 .logo {
 	align-items: center;
-	color: rgb(61, 65, 72);
+	color: var(--black-1);
 	display: flex;
 	flex-direction: row;
-	font-family: var(--font-display);
-	font-size: var(--size-display);
-	font-weight: 400;
-	gap: 12px;
+	font-family: var(--display);
+	font-size: var(--size-700);
+	gap: var(--1-5);
 	letter-spacing: -0.6px;
-	margin-bottom: 24px;
+	margin-bottom: var(--3);
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
+	line-height: var(--lh-700);
+	height: var(--lh-700);
 }
 
-a.logo:hover {
+.logo:hover {
 	color: rgb(61, 65, 72);
 	text-decoration: none;
 }
 
 .logo img {
 	fill: var(--primary);
-	height: 24px;
-	width: 24px;
+	width: var(--3);
+	height: var(--3);
 }
 
 
-/*  Tagline */
+/*  Tagline  */
 
-#tagline {
+.tagline {
 	color: var(--black-3);
-	margin-bottom: 16px;
-}
-
-
-/*  Figma link */
-
-a[data-external-link-arrow=true]:after {
-	content: "→";
-	display: inline-block;
-	margin-left: .25em;
+	margin-bottom: var(--3);
+	line-height: var(--lh-400-p);
+	display: block;
 }
 
 
 /*  Navigation  */
 
-.sidebar ul {
-	margin: 32px -8px;
+nav ul {
+	margin: var(--4) -10px;
+	display: block;
 }
 
-.sidebar li {
+nav li {
 	margin-bottom: 1px;
 }
 
-.sidebar li a {
-	border-radius: 4px;
+
+nav li a {
+	border-radius: var(--br-default);
 	color: var(--black-3);
 	display: block;
-	padding: 0px 8px;
+	font-size: var(--size-300);
+	padding: var(--1) 10px;
 	text-decoration: none;
-	width: 95%;
+	width: auto;
+	line-height: 16px;
 }
 
-.sidebar li a:hover, .sidebar li a.active {
+nav li a:hover, nav li a.active {
 	background-color: var(--black-7);
 	color: var(--black-1);
+	text-decoration: none;
 }
 
 
 /*  Credit  */
 
-#credit a {
+.credit a {
 	color: var(--black-3);	
 	display: inline;
-	font-size: var(--size-small);
+	font-size: var(--size-300);
+	text-decoration: underline;
 }
 
-#credit {
+.credit {
 	color: var(--black-3);
-	font-family: var(--font-mono);
-	font-size: var(--size-small);
-	margin-top: 24px;
+	font-family: var(--mono);
+	font-size: var(--size-300);
+	margin-top: var(--3);
 }
-
 
 
 
@@ -637,19 +686,57 @@ a[data-external-link-arrow=true]:after {
 /*----------------------------------------------------*/
 
 
+main {
+	flex: 1;
+	overflow: auto;
+	overscroll-behavior: contain;
+	padding: var(--8);
+	position: sticky;
+	text-align: left;
+	top: 0;
+	width: 100%;
+}
 
-p.description {
-	color: var(--black-3);
-	font-size: var(--size-large);
-	font-weight: 400;
+main p {
+	margin-bottom: var(--2-5);
+}
+
+section {
+	margin-top: var(--7);
+}
+
+section.intro {
+	margin-top: 0;
+}
+
+.intro p {
+	font-size: var(--size-500);
+	font-weight: var(--normal);
 	line-height: 160%;
-	-webkit-font-smoothing: antialiased;
 }
 
 
-/*  Examples  */
+/*	Example styles */
 
+figure {
+	align-items: center;
+	border: 1px solid var(--black-6);
+	border-radius: var(--br-large);
+	border-sizing: border-box;
+	display:flex;
+	flex-direction:row;
+	gap: var(--2);
+	margin: 0;
+	padding: var(--3);
+	width: calc(100% - var(--6));
+}
 
+.flex-column {
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+/*
 .tabList {
 	display: flex;
 	flex-wrap: wrap;
@@ -658,44 +745,43 @@ p.description {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	margin-bottom: 20px;
 }
-
-#exampleText {
-	margin-bottom: 20px;
-}
+*/
 
 
 
 /*  Properties list  */
 
-.propName {
-	color: var(--black-2);
-	font-weight: 500;
-}
-
-.propType {
-	color: var(--black-4);
-	font-family: var(--font-mono);
-	font-weight: 200;
-	margin-left: 3px;
-}
-
-.propDescription {
-	color: var(--black-3);
-	font-weight: 400;
-}
-
 .props li {
-	margin-bottom: 16px;
+	margin-bottom: var(--2);
 }
 
-.main .props p {
+.prop-name {
+	color: var(--black-2);
+	font-weight: var(--plus);
 	margin: 0;
 }
 
-.main p {
-	-webkit-font-smoothing: antialiased;
+.prop-type {
+	color: var(--black-4);
+	font-family: var(--mono);
+	font-weight: 200;
+	margin: 0;
 }
 
+.props p {
+	margin: 0;
+	color: var(--black-3);
+	font-weight: var(--normal);
+}
+
+.props .text-row {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: var(--1);
+}
+
+/*
 .tabList input[type="radio"] {
 	opacity: 0;
 	position: fixed;
@@ -723,6 +809,7 @@ p.description {
     border-color: var(--black-3);
 	padding: 9px 13px;
 }
+*/
 
 
 
@@ -757,15 +844,15 @@ p.description {
 	}
 */
 
-	.sidebar {
+	nav {
 		display: none;
 	}
 
-	.main {
-		padding: 32px 24px;
+	main {
+		padding: var(--4) var(--3);
 	}
 	
-	.propName {
+	.prop-name {
 		font-size: 18px;
 	}
 	
@@ -778,7 +865,7 @@ p.description {
 	}
 	
 	h1 {
-		font-family: var(--font-sans-serif);
+		font-family: var(--sans-serif);
 		font-weight: 600;
 	}
 	
