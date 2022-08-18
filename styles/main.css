@@ -83,10 +83,12 @@ h2 {
 
 a {
 	color: var(--primary);
+	font-weight: 500;
+	text-decoration: none;
 }
 
 a:hover {
-	color:var(--primaryDark2);
+	text-decoration: underline;
 }
 
 ul {
@@ -127,7 +129,7 @@ code {
 	overscroll-behavior: contain;
 	padding: 64px 40px;
 	position: sticky;
-	top:0;
+	top: 0;
 	width: 220px;
 }
 
@@ -138,11 +140,10 @@ code {
 	overflow: auto;
 /*	overscroll-behavior: contain;*/
 	padding: 64px;
-/*	position: sticky;*/
-	text-align: left;
-	width: 100%;
 	position: sticky;
+	text-align: left;
 	top: 0;
+	width: 100%;
 }
 
 section {
@@ -179,6 +180,7 @@ section {
 
 a.logo:hover {
 	color: rgb(61, 65, 72);
+	text-decoration: none;
 }
 
 .logo img {
@@ -198,14 +200,10 @@ a.logo:hover {
 
 /*  Figma link */
 
-.external-link {
-	text-decoration: none;
-}
-
 a[data-external-link-arrow=true]:after {
+	content: "→";
 	display: inline-block;
 	margin-left: .25em;
-	content: "→";
 }
 
 
@@ -222,10 +220,10 @@ a[data-external-link-arrow=true]:after {
 .sidebar li a {
 	border-radius: 4px;
 	color: var(--black3);
+	display: block;
 	padding: 0px 8px;
 	text-decoration: none;
 	width: 95%;
-	display: block;
 }
 
 .sidebar li a:hover, a.active {
@@ -259,8 +257,8 @@ a[data-external-link-arrow=true]:after {
 
 
 p.description {
-	font-size: var(--size-large);
 	color: var(--black3);
+	font-size: var(--size-large);
 	font-weight: 400;
 	line-height: 160%;
 	-webkit-font-smoothing: antialiased;
@@ -288,8 +286,8 @@ p.description {
 /*  Properties list  */
 
 .propName {
-	font-weight: 500;
 	color: var(--black2);
+	font-weight: 500;
 }
 
 .propType {
