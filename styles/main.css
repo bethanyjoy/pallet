@@ -538,7 +538,7 @@ h1 {
 }
 
 h2 {
-	color: var(--black-2);
+	color: var(--black-1);
 	font-size: var(--size-500);
 	font-weight: var(--bold);
 	margin-bottom: var(--2);
