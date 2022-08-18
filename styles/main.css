@@ -589,7 +589,7 @@ nav {
 	padding: var(--8) var(--5);
 	position: sticky;
 	top: 0;
-	width: 208px;
+	width: 206px;
 }
 
 
@@ -665,18 +665,17 @@ nav li a:hover, nav li a.active {
 
 /*  Credit  */
 
-.credit a {
-	color: var(--black-3);	
-	display: inline;
-	font-size: var(--size-300);
-	text-decoration: underline;
-}
-
 .credit {
 	color: var(--black-3);
 	font-family: var(--mono);
-	font-size: var(--size-300);
+	font-size: 12.5px;
 	margin-top: var(--3);
+}
+
+.credit a {
+	color: var(--black-3);	
+	display: inline;
+	text-decoration: underline;
 }
 
 
@@ -697,8 +696,8 @@ main {
 	width: 100%;
 }
 
-main p {
-	margin-bottom: var(--2-5);
+main article {
+	max-width: 980px;
 }
 
 section {
@@ -729,6 +728,7 @@ figure {
 	margin: 0;
 	padding: var(--3);
 	width: calc(100% - var(--6));
+	margin-top: var(--2);
 }
 
 .flex-column {
@@ -751,8 +751,12 @@ figure {
 
 /*  Properties list  */
 
+.props h2 {
+	margin-bottom: var(--3);
+}
+
 .props li {
-	margin-bottom: var(--2);
+	margin-bottom: var(--2-5);
 }
 
 .prop-name {
@@ -779,6 +783,7 @@ figure {
 	flex-direction: row;
 	align-items: baseline;
 	gap: var(--1);
+	margin-bottom: var(--0-5);
 }
 
 /*

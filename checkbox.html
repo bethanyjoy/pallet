@@ -107,200 +107,201 @@
 	
 	<main class="main">
 		
-		<section class="intro">	
-			<h1>Checkbox</h1>
-			<p>The Checkbox component allows user to select multiple items from a list.</p>
-		</section>
+		<article>
 		
-		<section>
-			<h2>Default</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus.
-			</p>
-			<figure>
-				<label class="checkbox">
-					<input type="checkbox">
-					<div class="checkmark">
-						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
-						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-						</svg>
-					</div>
-					Label
-				</label>
-			</figure>
-		</section>
-		
-		<section>
-			<h2>Indeterminate</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus.
-			</p>
-			<figure>
-				<label class="checkbox">
-					<input type="checkbox">
-					<div class="checkmark">
-						<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
-						  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
-						</svg>
-					</div>
-					Label
-				</label>
-			</figure>
-		</section>
-		
-		<section>
-			<h2>Disabled</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus.
-			</p>
-			<figure class="flex-column">
-				<label class="checkbox disabled">
-					<input type="checkbox">
-					<div class="checkmark">
-						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
-						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-						</svg>
-					</div>
-					Label
-				</label>
-				<label class="checkbox disabled checked">
-					<input type="checkbox">
-					<div class="checkmark">
-						<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
-						  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-						</svg>
-					</div>
-					Label
-				</label>
-				<label class="checkbox disabled checked">
-					<input type="checkbox">
-					<div class="checkmark">
-						<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
-						  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
-						</svg>
-					</div>
-					Label
-				</label>
-			</figure>
-		</section>
-			
-	
-		<section class="props">
-			
-			<h2>Props</h2>
+			<section class="intro">	
+				<h1>Checkbox</h1>
+				<p>The Checkbox component allows user to select multiple items from a list.</p>
+			</section>
 
-			<ul>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">type</span>
-						<span class="prop-type">'basic' | 'primary' | 'ghost' | 'outline' | 'plain'</span>
-					</span>
-					<p>Description</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">destructive</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Indicates a dangerous or potentially negative action</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">size</span>
-						<span class="prop-type">'default' | 'slim' | 'large'</span>
-					</span>
-					<p>Changes the size of the button, giving it more or less padding</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">textAlign</span>
-						<span class="prop-type">'center' | 'left'</span>
-					</span>
-					<p>Changes the inner text alignment of the button</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">fullWidth</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Allows the button to grow to the width of its container</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">disclosure</span>
-						<span class="prop-type">boolean | 'down' | 'up' | 'select'</span>
-					</span>
-					<p>Displays the button with a disclosure icon. Defaults to `down` when set to true</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">icon</span>
-						<span class="prop-type">any</span>
-					</span>
-					<p>Icon to display to the left of the button content</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">url</span>
-						<span class="prop-type">string</span>
-					</span>
-					<p>A destination to link to, rendered in the href attribute of a link</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">external</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Forces url to open in a new tab</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">download</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Tells the browser to download the url instead of opening it</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">submit</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Allows the button to submit a form</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">disabled</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Disables the button, disallowing user interaction</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">loading</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Replaces button text with a spinner while a background action is being performed</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">pressed</span>
-						<span class="prop-type">boolean</span>
-					</span>
-					<p>Sets the button in a pressed state</p>
-				</li>
-				<li>
-					<span class="text-row">
-						<span class="prop-name">accessibilityLabel</span>
-						<span class="prop-type">string</span>
-					</span>
-					<p>Visually hidden text for screen readers</p>
-				</li>	
-			</ul>
+			<section>
+				<h2>Default</h2>
+				<p>
+					Donec id elit non mi porta gravida at eget metus.
+				</p>
+				<figure>
+					<label class="checkbox">
+						<input type="checkbox">
+						<div class="checkmark">
+							<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+							  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						Label
+					</label>
+				</figure>
+			</section>
+
+			<section>
+				<h2>Indeterminate</h2>
+				<p>
+					Donec id elit non mi porta gravida at eget metus.
+				</p>
+				<figure>
+					<label class="checkbox">
+						<input type="checkbox">
+						<div class="checkmark">
+							<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
+							  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						Label
+					</label>
+				</figure>
+			</section>
+
+			<section>
+				<h2>Disabled</h2>
+				<p>
+					Donec id elit non mi porta gravida at eget metus.
+				</p>
+				<figure class="flex-column">
+					<label class="checkbox disabled">
+						<input type="checkbox">
+						<div class="checkmark">
+							<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+							  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						Label
+					</label>
+					<label class="checkbox disabled checked">
+						<input type="checkbox">
+						<div class="checkmark">
+							<svg xmlns="http://www.w3.org/2000/svg" class="check" viewBox="0 0 20 20">
+							  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						Label
+					</label>
+					<label class="checkbox disabled checked">
+						<input type="checkbox">
+						<div class="checkmark">
+							<svg xmlns="http://www.w3.org/2000/svg" class="minus-sm" viewBox="0 0 20 20">
+							  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						Label
+					</label>
+				</figure>
+			</section>
+
+
+			<section class="props">
+
+				<h2>Props</h2>
+
+				<ul>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">type</span>
+							<span class="prop-type">'basic' | 'primary' | 'ghost' | 'outline' | 'plain'</span>
+						</span>
+						<p>Description</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">destructive</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Indicates a dangerous or potentially negative action</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">size</span>
+							<span class="prop-type">'default' | 'slim' | 'large'</span>
+						</span>
+						<p>Changes the size of the button, giving it more or less padding</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">textAlign</span>
+							<span class="prop-type">'center' | 'left'</span>
+						</span>
+						<p>Changes the inner text alignment of the button</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">fullWidth</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Allows the button to grow to the width of its container</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">disclosure</span>
+							<span class="prop-type">boolean | 'down' | 'up' | 'select'</span>
+						</span>
+						<p>Displays the button with a disclosure icon. Defaults to `down` when set to true</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">icon</span>
+							<span class="prop-type">any</span>
+						</span>
+						<p>Icon to display to the left of the button content</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">url</span>
+							<span class="prop-type">string</span>
+						</span>
+						<p>A destination to link to, rendered in the href attribute of a link</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">external</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Forces url to open in a new tab</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">download</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Tells the browser to download the url instead of opening it</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">submit</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Allows the button to submit a form</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">disabled</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Disables the button, disallowing user interaction</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">loading</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Replaces button text with a spinner while a background action is being performed</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">pressed</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Sets the button in a pressed state</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">accessibilityLabel</span>
+							<span class="prop-type">string</span>
+						</span>
+						<p>Visually hidden text for screen readers</p>
+					</li>	
+				</ul>
+
+			</section>
 		
-		</section>
-		
-<!--		<h2>Best practices</h2>-->
-						
+		</article>					
 	
 	</main>
 
