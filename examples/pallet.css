@@ -1,113 +1,47 @@
 :root {
 		
-		/*	Colors */
-		
-		--white: rgba(255, 255, 255, 1);
-		
-		--black1: rgba(40, 42, 48, 1);
-		--black2: rgba(61, 65, 72, 1);
-		--black3: rgba(108, 111, 117, 1);
-		--black4: rgba(145, 149, 156, 1);
-		--black5: rgba(201, 203, 205, 1);
-		--black6: rgba(223, 225, 228, 1);
-		--black7: rgba(239, 241, 244, 1);
-		--black8: rgba(244, 245, 248, 1);
-		--black9: rgba(248, 249, 251, 1);
-		
-		--primaryLight1: rgba(239, 243, 255, 1);
-		--primaryLight2: rgba(229, 236, 255, 1);
-		--primaryLight3: rgba(212, 224, 255, 1);
-		--primaryLight4: rgba(185, 204, 248, 1);
-		--primary: rgba(69, 112, 224, 1);
-		--primaryDark1: rgba(51, 101, 228, 1);
-		--primaryDark2: rgba(29, 81, 215, 1);
-		
-		/*	Fonts */
-		
-		--sansSerif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/*	Colors */
+
+	--white: rgba(255, 255, 255, 1);
+
+	--black-1: rgba(40, 42, 48, 1);
+	--black-2: rgba(61, 65, 72, 1);
+	--black-3: rgba(108, 111, 117, 1);
+	--black-4: rgba(145, 149, 156, 1);
+	--black-5: rgba(201, 203, 205, 1);
+	--black-6: rgba(223, 225, 228, 1);
+	--black-7: rgba(239, 241, 244, 1);
+	--black-8: rgba(244, 245, 248, 1);
+	--black-9: rgba(248, 249, 251, 1);
+
+	--primary-light-1: rgba(239, 243, 255, 1);
+	--primary-light-2: rgba(229, 236, 255, 1);
+	--primary-light-3: rgba(212, 224, 255, 1);
+	--primary-light-4: rgba(185, 204, 248, 1);
+	--primary: rgba(69, 112, 224, 1);
+	--primary-dark-1: rgba(51, 101, 228, 1);
+	--primary-dark-2: rgba(29, 81, 215, 1);
+
+	/*	Fonts */
+
+	--sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+	/*	Font size */
+
+	--size-tiny: 11px;
+	--size-mini: 12px;
+	--size-small: 13px;
+	--size-medium: 15px;
+	--size-large: 18px;
+	--size-xlarge: 20px;
+	--size-display: 24px;
+
+	/* Font weight */
+
+	--normal: 400;
+	--plus: 500;
+	--bold: 600;
 	
 }
 
 
-body {
-  margin: 24px;
-  -webkit-font-smoothing: antialiased;
-}
-	
-	
-
-button {
-	
-	box-sizing: border-box;
-
-	/* Auto layout */
-
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 8px 14px;
-	gap: 4px;
-
-	width: 88px;
-	height: 32px;
-
-	/* White */
-
-	background: #FFFFFF;
-	/* Black 6 */
-
-	border: 1px solid #DFE1E4;
-	/* Actions/Button Shadow */
-
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
-	border-radius: 4px;
-
-	/* Inside auto layout */
-
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-	
-}
-
-
-button span {
-	/* Label */
-
-
-	width: 56px;
-	height: 16px;
-
-	/* Small plus */
-
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 13px;
-	line-height: 16px;
-	/* identical to box height */
-
-	letter-spacing: -0.0025em;
-
-	/* Black 2 */
-
-	color: #3D4148;
-
-
-	/* Inside auto layout */
-
-	flex: none;
-	order: 1;
-	flex-grow: 0;
-	
-	}
-
-/*
-@media only screen and (max-width: 800px) {
-  
-  button {
-	background:yellow !important;
-  }
-  
-}*/

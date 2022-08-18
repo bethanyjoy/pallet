@@ -1,26 +1,30 @@
 :root {
-
+	
 	/*	Colors */
 
 	--white: rgba(255, 255, 255, 1);
 
-	--black1: rgba(40, 42, 48, 1);
-	--black2: rgba(61, 65, 72, 1);
-	--black3: rgba(108, 111, 117, 1);
-	--black4: rgba(145, 149, 156, 1);
-	--black5: rgba(201, 203, 205, 1);
-	--black6: rgba(223, 225, 228, 1);
-	--black7: rgba(239, 241, 244, 1);
-	--black8: rgba(244, 245, 248, 1);
-	--black9: rgba(248, 249, 251, 1);
+	--black-1: rgba(40, 42, 48, 1);
+	--black-2: rgba(61, 65, 72, 1);
+	--black-3: rgba(108, 111, 117, 1);
+	--black-4: rgba(145, 149, 156, 1);
+	--black-5: rgba(201, 203, 205, 1);
+	--black-6: rgba(223, 225, 228, 1);
+	--black-7: rgba(239, 241, 244, 1);
+	--black-8: rgba(244, 245, 248, 1);
+	--black-9: rgba(248, 249, 251, 1);
 
-	--primaryLight1: rgba(239, 243, 255, 1);
-	--primaryLight2: rgba(229, 236, 255, 1);
-	--primaryLight3: rgba(212, 224, 255, 1);
-	--primaryLight4: rgba(185, 204, 248, 1);
+	--primary-light-1: rgba(239, 243, 255, 1);
+	--primary-light-2: rgba(229, 236, 255, 1);
+	--primary-light-3: rgba(212, 224, 255, 1);
+	--primary-light-4: rgba(185, 204, 248, 1);
 	--primary: rgba(69, 112, 224, 1);
-	--primaryDark1: rgba(51, 101, 228, 1);
-	--primaryDark2: rgba(29, 81, 215, 1);
+	--primary-dark-1: rgba(51, 101, 228, 1);
+	--primary-dark-2: rgba(29, 81, 215, 1);
+	
+	--red: rgba(237, 149, 145, 1);
+	--red-dark-1: rgba(222, 96, 91, 1);
+	--red-dark-2: rgba(199, 45, 45, 1);
 
 	/*	Fonts */
 
@@ -29,7 +33,7 @@
 	--font-display: "MessinaSansLumi-Bold", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	
 	/*	Font size */
-	
+
 	--size-tiny: 11px;
 	--size-mini: 12px;
 	--size-small: 13px;
@@ -38,10 +42,11 @@
 	--size-xlarge: 20px;
 	--size-display: 24px;
 
-	/*	Spacing */
-	
-	--spacing-xLarge: 32px;
-	--spacing-large: 24px;
+	/* Font weight */
+
+	--normal: 400;
+	--plus: 500;
+	--bold: 600;
 
 }
 
@@ -52,11 +57,388 @@
 
 
 
+/*	Pallet styles */
+
+
+figure {
+	padding: 24px;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--sans-serif);
+	font-weight: var(--normal);
+	font-size: var(--size-small);
+	line-height: 16px;
+	letter-spacing: -0.0025em;
+	border: 1px solid var(--black-6);
+	border-radius: 8px;
+	border-sizing: border-box;
+	width: calc(100% - 48px);
+	margin: 0;
+	display:flex;
+	flex-direction:row;
+	gap: 16px;
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction:column;
+	align-items:flex-start;
+}
+
+
+
+/* Button */
+
+button {
+	
+	/* Global */
+
+	align-items: center;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex: none;
+	flex-direction: row;
+	flex-grow: 0;
+	font-weight: var(--plus);
+	justify-content: center;
+	order: 0;
+	
+	/* Sizing */
+
+	padding: 8px 14px;
+	gap: 4px;
+	height: 32px;
+
+	/* Color */
+
+	background: var(--white);
+	border: 1px solid var(--black-6);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+	color: var(--black-2);
+	fill: var(--black-3);
+	
+}
+
+button svg {
+	width: 16px;
+	height: 16px;
+}
+
+button:hover {
+	background: var(--black-9);
+}
+
+button:active {
+	background: var(--black-8);
+}
+
+
+
+/* Primary button */
+
+button.primary {
+	background: var(--primary);
+	border: none;
+	color: var(--white);
+}
+
+button.primary:hover {
+	background: var(--primary-dark-1);
+}
+
+button.primary:active {
+	background: var(--primary-dark-2);
+}
+
+
+
+/* Minimal button */
+
+button.minimal {
+	border: 1px solid var(--white);
+	box-shadow: none;
+}
+
+button.minimal:hover {
+	background: var(--black-9);
+	border: 1px solid var(--black-6);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+button.minimal:active {
+	background: var(--black-8);
+	border: 1px solid var(--black-6);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+
+
+/* Outline button */
+
+button.outline {
+	background: none;
+	border: 1px solid var(--black-4);
+	box-shadow: none;
+}
+
+button.outline:hover {
+	background: none;
+	border: 1px solid var(--black-3);
+}
+
+button.outline:active {
+	background: none;
+	border: 1px solid var(--black-3);
+}
+
+
+/* Plain button */
+
+button.plain {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: var(--primary);
+	font-weight: var(--normal);
+	gap: 4px;
+	height: 16px;
+	padding: 0px;
+}
+
+button.plain:hover {
+	background: none;
+	border: none;
+	color: var(--primary-dark-1);
+	text-decoration: underline;
+}
+
+button.plain:active {
+	background: none;
+	border: none;
+	color: var(--primary-dark-1);
+	text-decoration: underline;
+}
+
+
+
+
+/* Destructive buttons */
+
+button.destructive {
+	color: var(--red-dark-1);
+}
+
+button.destructive:hover {
+	color: var(--red-dark-2);
+}
+
+button.destructive:active {
+	color: var(--red-dark-2);
+}
+
+button.primary.destructive {
+	background: var(--red-dark-1);
+	color: var(--white);
+}
+
+button.primary.destructive:hover {
+	background: var(--red-dark-2);
+	color: var(--white);
+}
+
+button.primary.destructive:active {
+	background: var(--red-dark-2);
+	color: var(--white);
+}
+
+
+
+/* Disabled buttons */
+
+button.disabled {
+	color: var(--black-4);
+	cursor: none;
+	pointer-events: none;
+	box-shadow: none;
+}
+
+button.primary.disabled {
+	background: var(--primary-light-4);
+	color: var(--white);
+}
+
+button.outline.disabled {
+	border: 1px solid var(--black-6);
+}
+
+button.plain.disabled {
+	color: var(--black-5);
+}
+
+
+
+/* Spinner */
+
+.spinner {
+	-webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+/* Button sizes */
+
+button.slim {
+	padding: 6px 8px;
+	height: 28px;
+}
+
+button.large {
+	padding: 8px 14px;
+	height: 40px;
+}
+
+
+
+
+
+
+
+/* Styles for checkbox filters */
+
+
+/* Customize the label (the container) */
+.checkbox {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	line-height: 24px;
+	padding-left: 24px;
+	color: var(--black-1);
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	border: 1px solid var(--black-6);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 3px;
+}
+
+/* On mouse-over, change border color */
+.checkbox:hover input ~ .checkmark {
+	border: 1px solid var(--black-5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+	background-color: var(--primary);
+	border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+	left: 5px;
+	top: 2px;
+	width: 4px;
+	height: 7px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* Style the checkmark/indicator */
+.checkbox.indeterminate .checkmark:after {
+	left: 4px;
+	top: 6px;
+	width: 8px;
+	height: 1px;
+	border: solid white;
+	border-width: 0 0 2px 0;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.checkbox.disabled {
+	cursor: none;
+	pointer-events: none;
+	color: var(--black-4);
+}
+
+.checkbox.disabled .checkmark {
+	background-color: var(--black-7);
+	border: none;
+}
+
+.checkbox.checked .checkmark:after {
+	display: block;
+	border: solid var(--black-4);
+	border-width: 0 2px 2px 0;
+}
+
+.checkbox.checked.indeterminate .checkmark:after {
+	display: block;
+	border: solid var(--black-4);
+	border-width: 0 0 2px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*	Global Styles */
 
 
 body {
-	color: var(--black3);
+	color: var(--black-3);
 	display: flex;
 	font-family: var(--font-sans-serif);
 	font-size: var(--size-medium);
@@ -65,7 +447,7 @@ body {
 }
 
 h1 {
-	color: var(--black1);
+	color: var(--black-1);
 	font-family: var(--font-display);
 	font-size: var(--size-display);
 	letter-spacing: -0.6px;
@@ -75,7 +457,7 @@ h1 {
 }
 
 h2 {
-	color: var(--black2);
+	color: var(--black-2);
 	font-size: var(--size-large);
 	font-weight: 600;
 	margin-bottom: 16px;
@@ -101,14 +483,14 @@ li {
 }
 
 iframe {
-	border: 1px solid var(--black6);
+	border: 1px solid var(--black-6);
 	border-radius: 8px;
 	border-sizing: border-box;
 	width: 100%;
 }
 
 code {
-	background-color: var(--black7);
+	background-color: var(--black-7);
 	border-radius: 4px;
 	font-family: var(--font-mono);
 	padding: .22rem .25rem;
@@ -193,7 +575,7 @@ a.logo:hover {
 /*  Tagline */
 
 #tagline {
-	color: var(--black3);
+	color: var(--black-3);
 	margin-bottom: 16px;
 }
 
@@ -219,32 +601,32 @@ a[data-external-link-arrow=true]:after {
 
 .sidebar li a {
 	border-radius: 4px;
-	color: var(--black3);
+	color: var(--black-3);
 	display: block;
 	padding: 0px 8px;
 	text-decoration: none;
 	width: 95%;
 }
 
-.sidebar li a:hover, a.active {
-	background-color: var(--black7);
-	color: var(--black1);
+.sidebar li a:hover, .sidebar li a.active {
+	background-color: var(--black-7);
+	color: var(--black-1);
 }
 
 
 /*  Credit  */
 
 #credit a {
-	color: var(--black3);	
+	color: var(--black-3);	
 	display: inline;
 	font-size: var(--size-small);
 }
 
 #credit {
-	color: var(--black3);
+	color: var(--black-3);
 	font-family: var(--font-mono);
 	font-size: var(--size-small);
-	margin-top: var(--spacing-large);
+	margin-top: 24px;
 }
 
 
@@ -257,7 +639,7 @@ a[data-external-link-arrow=true]:after {
 
 
 p.description {
-	color: var(--black3);
+	color: var(--black-3);
 	font-size: var(--size-large);
 	font-weight: 400;
 	line-height: 160%;
@@ -286,19 +668,19 @@ p.description {
 /*  Properties list  */
 
 .propName {
-	color: var(--black2);
+	color: var(--black-2);
 	font-weight: 500;
 }
 
 .propType {
-	color: var(--black4);
+	color: var(--black-4);
 	font-family: var(--font-mono);
 	font-weight: 200;
 	margin-left: 3px;
 }
 
 .propDescription {
-	color: var(--black3);
+	color: var(--black-3);
 	font-weight: 400;
 }
 
@@ -322,7 +704,7 @@ p.description {
 
 .tabList label {
 	background-color: var(--white);
-	border: 1px solid var(--black6);
+	border: 1px solid var(--black-6);
 	border-radius: 8px;
 	box-sizing: border-box;
 	font-size: 15px;
@@ -336,9 +718,9 @@ p.description {
 }
 
 .tabList input[type="radio"]:checked + label {
-    background-color: var(--black8);
+    background-color: var(--black-8);
 	border: solid 2px;
-    border-color: var(--black3);
+    border-color: var(--black-3);
 	padding: 9px 13px;
 }
 
