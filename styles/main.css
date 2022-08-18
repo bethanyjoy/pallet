@@ -127,6 +127,7 @@ code {
 	overscroll-behavior: contain;
 	padding: 64px 40px;
 	position: sticky;
+	top:0;
 	width: 220px;
 }
 
