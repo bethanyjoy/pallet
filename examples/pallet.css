@@ -30,15 +30,13 @@
 
 
 body {
-  margin: 80px 24px;
+  margin: 24px;
   -webkit-font-smoothing: antialiased;
 }
 	
 	
 
 button {
-	
-	margin:auto;
 	
 	box-sizing: border-box;
 
@@ -48,7 +46,7 @@ button {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 8px 16px;
+	padding: 8px 14px;
 	gap: 4px;
 
 	width: 88px;
