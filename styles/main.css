@@ -141,6 +141,8 @@ code {
 /*	position: sticky;*/
 	text-align: left;
 	width: 100%;
+	position: sticky;
+	top: 0;
 }
 
 section {
