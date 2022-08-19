@@ -962,7 +962,7 @@ section.index-intro {
 	display: grid;
 	gap: var(--4);
 	grid-gap: var(--4);
-	grid-template-columns: repeat(auto-fill,minmax(min(16rem,100%),1fr));
+	grid-template-columns: repeat(auto-fill,minmax(min(240px,100%),1fr));
 	margin-top: var(--4);
 }
 
@@ -987,6 +987,7 @@ section.index-intro {
 
 .grid img {
 	border-radius: var(--br-large);
+	width: 100%;
 }
 
 .ul-header {
@@ -999,11 +1000,9 @@ section.index-intro {
 	text-transform: uppercase;
 }
 
-/*
 .grid.swatches {
-	grid-template-columns: repeat(auto-fill,minmax(min(320px,100%),1fr));
+	grid-template-columns: repeat(auto-fill,minmax(min(200px,100%),1fr));
 }
-*/
 
 .grid.swatches li {
 	gap: var(--2);
