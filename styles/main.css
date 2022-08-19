@@ -221,8 +221,8 @@ button {
 }
 
 button svg {
-	width: var(--2);
 	height: var(--2);
+	width: var(--2);
 }
 
 button:hover {
@@ -350,10 +350,10 @@ button.primary.destructive:active {
 /* Disabled buttons */
 
 button.disabled {
+	box-shadow: none;
 	color: var(--black-4);
 	cursor: none;
 	pointer-events: none;
-	box-shadow: none;
 }
 
 button.primary.disabled {
@@ -373,13 +373,13 @@ button.plain.disabled {
 /* Button sizes */
 
 button.slim {
-	padding: 6px var(--1);
 	height: 28px;
+	padding: 6px var(--1);
 }
 
 button.large {
-	padding: var(--1) 14px;
 	height: var(--5);
+	padding: var(--1) 14px;
 }
 
 
@@ -512,13 +512,13 @@ button.large {
 
 body {
 	color: var(--black-2);
+	display: flex;
 	font-family: var(--sans-serif);
 	font-size: var(--size-400);
 	font-weight: var(--normal);
 	letter-spacing: -0.0025em;
 	line-height: var(--size-400);
 	-webkit-font-smoothing: antialiased;
-	display: flex;
 }
 
 p {
@@ -532,9 +532,9 @@ h1 {
 	font-family: var(--display);
 	font-size: var(--size-700);
 	letter-spacing: -0.6px;
+	line-height: var(--lh-700);
 	margin-bottom: var(--2-5);
 	margin-top: 0;
-	line-height: var(--lh-700);
 }
 
 h2 {
@@ -603,12 +603,11 @@ nav {
 	font-family: var(--display);
 	font-size: var(--size-700);
 	gap: var(--1-5);
+	height: var(--lh-700);
 	letter-spacing: -0.6px;
+	line-height: var(--lh-700);
 	margin-bottom: var(--3);
 	text-decoration: none;
-	-webkit-font-smoothing: antialiased;
-	line-height: var(--lh-700);
-	height: var(--lh-700);
 }
 
 .logo:hover {
@@ -618,8 +617,8 @@ nav {
 
 .logo img {
 	fill: var(--primary);
-	width: var(--3);
 	height: var(--3);
+	width: var(--3);
 }
 
 
@@ -627,9 +626,9 @@ nav {
 
 .tagline {
 	color: var(--black-3);
-	margin-bottom: var(--3);
-	line-height: var(--lh-400-p);
 	display: block;
+	line-height: var(--lh-400-p);
+	margin-bottom: var(--3);
 }
 
 
@@ -650,10 +649,10 @@ nav li a {
 	color: var(--black-3);
 	display: block;
 	font-size: var(--size-300);
+	line-height: 16px;
 	padding: var(--1) 10px;
 	text-decoration: none;
 	width: auto;
-	line-height: 16px;
 }
 
 nav li a:hover, nav li a.active {
@@ -741,18 +740,6 @@ figure {
 	flex-direction: column;
 }
 
-/*
-.tabList {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	grid-gap: 0.5rem;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin-bottom: 20px;
-}
-*/
-
-
 
 /*  Properties list  */
 
@@ -784,50 +771,32 @@ figure {
 }
 
 .props .text-row {
+	align-items: baseline;
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
 	gap: var(--1);
 	margin-bottom: var(--0-5);
 }
 
-/*
-.tabList input[type="radio"] {
-	opacity: 0;
-	position: fixed;
-	width: 0;
+
+
+/*----------------------------------------------------*/
+/*  Index page styles                                 */
+/*----------------------------------------------------*/
+
+
+section.index-intro {
+	margin-top: -7px;
 }
 
-.tabList label {
-	background-color: var(--white);
-	border: 1px solid var(--black-6);
-	border-radius: 8px;
-	box-sizing: border-box;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 20px;
-	padding: 10px 14px;
-}
 
-.tabList label:hover {
-	box-shadow: 0 4px 7px rgba(0,0,0,0.08);
-}
-
-.tabList input[type="radio"]:checked + label {
-    background-color: var(--black-8);
-	border: solid 2px;
-    border-color: var(--black-3);
-	padding: 9px 13px;
-}
-*/
-
-
+/*  Grid  */
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill,minmax(min(16rem,100%),1fr));
-	grid-gap: var(--4);
 	gap: var(--4);
+	grid-gap: var(--4);
+	grid-template-columns: repeat(auto-fill,minmax(min(16rem,100%),1fr));
 	margin-top: var(--4);
 }
 
@@ -836,38 +805,33 @@ figure {
 }
 
 .grid a {
-	position: relative;
-	display: flex;
-	flex-direction:column;
-	width: 100%;
-	gap: var(--2);
-}
-
-.grid img {
-	border-radius: var(--br-large);
-}
-
-
-.ul-header {
-	display: block;
-	margin: var(--5) 0 var(--1) 0;
-	font-size: var(--size-100);
-	text-transform: uppercase;
-	letter-spacing: 0.75px;
-	font-weight: var(--bold);
-	color: var(--black-4);
-}
-
-.grid a {
-	text-decoration: none;
 	color: var(--black-3);
+	display: flex;
+	flex-direction: column;
 	font-weight: var(--plus);
+	gap: var(--2);
+	position: relative;
+	text-decoration: none;
+	width: 100%;
 }
 
 .grid a:hover {
 	text-decoration: none;
 }
 
+.grid img {
+	border-radius: var(--br-large);
+}
+
+.ul-header {
+	color: var(--black-4);
+	display: block;
+	font-size: var(--size-100);
+	font-weight: var(--bold);
+	letter-spacing: 0.75px;
+	margin: var(--5) 0 var(--1) 0;
+	text-transform: uppercase;
+}
 
 
 
