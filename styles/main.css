@@ -2,29 +2,44 @@
 	
 	/*	Colors */
 
-	--white: rgba(255, 255, 255, 1);
+	--white: #FFFFFF;
 
-	--black-1: rgba(40, 42, 48, 1);
-	--black-2: rgba(61, 65, 72, 1);
-	--black-3: rgba(108, 111, 117, 1);
-	--black-4: rgba(145, 149, 156, 1);
-	--black-5: rgba(201, 203, 205, 1);
-	--black-6: rgba(223, 225, 228, 1);
-	--black-7: rgba(239, 241, 244, 1);
-	--black-8: rgba(244, 245, 248, 1);
-	--black-9: rgba(248, 249, 251, 1);
+	--gray-900: #282A30;
+	--gray-800: #3D4148;
+	--gray-700: #6C6F75;
+	--gray-600: #91959C;
+	--gray-500: #C9CBCD;
+	--gray-400: #DFE1E4;
+	--gray-300: #EFF1F4;
+	--gray-200: #F4F5F8;
+	--gray-100: #F8F9FB;
 
-	--primary-light-1: rgba(239, 243, 255, 1);
-	--primary-light-2: rgba(229, 236, 255, 1);
-	--primary-light-3: rgba(212, 224, 255, 1);
-	--primary-light-4: rgba(185, 204, 248, 1);
-	--primary: rgba(69, 112, 224, 1);
-	--primary-dark-1: rgba(51, 101, 228, 1);
-	--primary-dark-2: rgba(29, 81, 215, 1);
+	--blue-700: #1D51D7;
+	--blue-600: #3365E4;
+	--blue-500: #4570E0;
+	--blue-400: #B9CCF8;
+	--blue-300: #D4E0FF;
+	--blue-200: #E5ECFF;
+	--blue-100: #EFF3FF;
 	
-	--red: rgba(237, 149, 145, 1);
-	--red-dark-1: rgba(222, 96, 91, 1);
-	--red-dark-2: rgba(199, 45, 45, 1);
+	--green-500: #367642;
+	--green-400: #4A8F5D;
+	--green-300: #6AB586;
+	--green-200: #E2F9DA;
+	--green-100: #F0FCEC;
+		
+	--yellow-500: #996500;
+	--yellow-400: #DEA206;
+	--yellow-300: #F0C11C;
+	--yellow-200: #FFF4C3;
+	--yellow-100: #FFF9DD;
+	
+	--red-500: #C72D2D;
+	--red-400: #DE605B;
+	--red-300: #ED9591;
+	--red-200: #FDE5DB;
+	--red-100: #FEF2ED;
+	
 
 	/*	Fonts */
 
@@ -74,6 +89,7 @@
 	--6: 48px;
 	--7: 56px;
 	--8: 64px;
+	--9: 72px;
 	--10: 80px;
 	
 	/* Border radius */
@@ -88,7 +104,7 @@
 	
 	/* Border */
 	
-	--border: solid 1px var(--black-6);
+	--border: solid 1px var(--gray-400);
 
 }
 
@@ -174,6 +190,156 @@
 
 
 
+/*----------------------------------------------------*/
+/*  Color styles                                      */
+/*----------------------------------------------------*/
+
+
+/* White */
+
+.bg-white {
+	background-color: var(--white);
+	border: var(--border);
+}
+
+
+/* Gray */
+
+.bg-gray-900 {
+	background-color: var(--gray-900);
+}
+
+.bg-gray-800 {
+	background-color: var(--gray-800);
+}
+
+.bg-gray-700 {
+	background-color: var(--gray-700);
+}
+
+.bg-gray-600 {
+	background-color: var(--gray-600);
+}
+
+.bg-gray-500 {
+	background-color: var(--gray-500);
+}
+
+.bg-gray-400 {
+	background-color: var(--gray-400);
+}
+
+.bg-gray-300 {
+	background-color: var(--gray-300);
+}
+
+.bg-gray-200 {
+	background-color: var(--gray-200);
+}
+
+.bg-gray-100 {
+	background-color: var(--gray-100);
+}
+
+
+/* Blue */
+
+.bg-blue-700 {
+	background-color: var(--blue-700);
+}
+
+.bg-blue-600 {
+	background-color: var(--blue-600);
+}
+
+.bg-blue-500 {
+	background-color: var(--blue-500);
+}
+
+.bg-blue-400 {
+	background-color: var(--blue-400);
+}
+
+.bg-blue-300 {
+	background-color: var(--blue-300);
+}
+
+.bg-blue-200 {
+	background-color: var(--blue-200);
+}
+
+.bg-blue-100 {
+	background-color: var(--blue-100);
+}
+
+
+/* Green */
+
+.bg-green-500 {
+	background-color: var(--green-500);
+}
+
+.bg-green-400 {
+	background-color: var(--green-400);
+}
+
+.bg-green-300 {
+	background-color: var(--green-300);
+}
+
+.bg-green-200 {
+	background-color: var(--green-200);
+}
+
+.bg-green-100 {
+	background-color: var(--green-100);
+}
+
+
+/* Yellow */
+
+.bg-yellow-500 {
+	background-color: var(--yellow-500);
+}
+
+.bg-yellow-400 {
+	background-color: var(--yellow-400);
+}
+
+.bg-yellow-300 {
+	background-color: var(--yellow-300);
+}
+
+.bg-yellow-200 {
+	background-color: var(--yellow-200);
+}
+
+.bg-yellow-100 {
+	background-color: var(--yellow-100);
+}
+
+
+/* Red */
+
+.bg-red-500 {
+	background-color: var(--red-500);
+}
+
+.bg-red-400 {
+	background-color: var(--red-400);
+}
+
+.bg-red-300 {
+	background-color: var(--red-300);
+}
+
+.bg-red-200 {
+	background-color: var(--red-200);
+}
+
+.bg-red-100 {
+	background-color: var(--red-100);
+}
 
 
 /*----------------------------------------------------*/
@@ -208,10 +374,10 @@ button {
 	/* Color */
 
 	background: var(--white);
-	border: 1px solid var(--black-6);
+	border: 1px solid var(--gray-400);
 	box-shadow: var(--shadow-button);
-	color: var(--black-2);
-	fill: var(--black-3);
+	color: var(--gray-800);
+	fill: var(--gray-700);
 	
 	/* Text */
 	
@@ -226,28 +392,28 @@ button svg {
 }
 
 button:hover {
-	background: var(--black-9);
+	background: var(--gray-100);
 }
 
 button:active {
-	background: var(--black-8);
+	background: var(--gray-200);
 }
 
 
 /* Primary button */
 
 button.primary {
-	background: var(--primary);
+	background: var(--blue-500);
 	border: none;
 	color: var(--white);
 }
 
 button.primary:hover {
-	background: var(--primary-dark-1);
+	background: var(--blue-600);
 }
 
 button.primary:active {
-	background: var(--primary-dark-2);
+	background: var(--blue-700);
 }
 
 
@@ -259,14 +425,14 @@ button.minimal {
 }
 
 button.minimal:hover {
-	background: var(--black-9);
-	border: 1px solid var(--black-6);
+	background: var(--gray-100);
+	border: 1px solid var(--gray-400);
 	box-shadow: var(--shadow-button);
 }
 
 button.minimal:active {
-	background: var(--black-8);
-	border: 1px solid var(--black-6);
+	background: var(--gray-200);
+	border: 1px solid var(--gray-400);
 	box-shadow: var(--shadow-button);
 }
 
@@ -275,18 +441,18 @@ button.minimal:active {
 
 button.outline {
 	background: none;
-	border: 1px solid var(--black-4);
+	border: 1px solid var(--gray-600);
 	box-shadow: none;
 }
 
 button.outline:hover {
 	background: none;
-	border: 1px solid var(--black-3);
+	border: 1px solid var(--gray-700);
 }
 
 button.outline:active {
 	background: none;
-	border: 1px solid var(--black-3);
+	border: 1px solid var(--gray-700);
 }
 
 
@@ -296,7 +462,7 @@ button.plain {
 	background: none;
 	border: none;
 	box-shadow: none;
-	color: var(--primary);
+	color: var(--blue-500);
 	font-weight: var(--normal);
 	height: var(--2);
 	padding: 0;
@@ -305,14 +471,14 @@ button.plain {
 button.plain:hover {
 	background: none;
 	border: none;
-	color: var(--primary-dark-1);
+	color: var(--blue-600);
 	text-decoration: underline;
 }
 
 button.plain:active {
 	background: none;
 	border: none;
-	color: var(--primary-dark-1);
+	color: var(--blue-600);
 	text-decoration: underline;
 }
 
@@ -320,29 +486,29 @@ button.plain:active {
 /* Destructive buttons */
 
 button.destructive {
-	color: var(--red-dark-1);
+	color: var(--red-400);
 }
 
 button.destructive:hover {
-	color: var(--red-dark-2);
+	color: var(--red-500);
 }
 
 button.destructive:active {
-	color: var(--red-dark-2);
+	color: var(--red-500);
 }
 
 button.primary.destructive {
-	background: var(--red-dark-1);
+	background: var(--red-400);
 	color: var(--white);
 }
 
 button.primary.destructive:hover {
-	background: var(--red-dark-2);
+	background: var(--red-500);
 	color: var(--white);
 }
 
 button.primary.destructive:active {
-	background: var(--red-dark-2);
+	background: var(--red-500);
 	color: var(--white);
 }
 
@@ -351,22 +517,22 @@ button.primary.destructive:active {
 
 button.disabled {
 	box-shadow: none;
-	color: var(--black-4);
+	color: var(--gray-600);
 	cursor: none;
 	pointer-events: none;
 }
 
 button.primary.disabled {
-	background: var(--primary-light-4);
+	background: var(--blue-400);
 	color: var(--white);
 }
 
 button.outline.disabled {
-	border: 1px solid var(--black-6);
+	border: 1px solid var(--gray-400);
 }
 
 button.plain.disabled {
-	color: var(--black-5);
+	color: var(--gray-500);
 }
 
 
@@ -392,7 +558,7 @@ button.large {
 /* Customize the label (the container) */
 .checkbox {
 	align-items: center;
-	color: var(--black-1);
+	color: var(--gray-900);
 	cursor: pointer;
 	display: flex;
 	flex-direction: row;
@@ -414,7 +580,7 @@ button.large {
 
 /* Create a custom checkbox */
 .checkmark {
-	border: 1px solid var(--black-6);
+	border: 1px solid var(--gray-400);
 	border-radius: var(--br-small);
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -425,12 +591,12 @@ button.large {
 
 /* On mouse-over, change border color */
 .checkbox:hover input ~ .checkmark {
-	border: 1px solid var(--black-5);
+	border: 1px solid var(--gray-500);
 }
 
 /* When the checkbox is checked, add a blue background */
 .checkbox input:checked ~ .checkmark {
-	background-color: var(--primary);
+	background-color: var(--blue-500);
 	border: none;
 }
 
@@ -453,19 +619,19 @@ button.large {
 }
 
 .checkbox.disabled {
-	color: var(--black-4);
+	color: var(--gray-600);
 	cursor: none;
 	pointer-events: none;
 }
 
 .checkbox.disabled .checkmark {
-	background-color: var(--black-7);
+	background-color: var(--gray-300);
 	border: none;
 }
 
 .checkbox.checked .checkmark svg {
 	display: block;
-	fill: var(--black-4);
+	fill: var(--gray-600);
 }
 
 
@@ -511,7 +677,7 @@ button.large {
 
 
 body {
-	color: var(--black-2);
+	color: var(--gray-800);
 	display: flex;
 	font-family: var(--sans-serif);
 	font-size: var(--size-400);
@@ -522,13 +688,13 @@ body {
 }
 
 p {
-	color: var(--black-3);
+	color: var(--gray-700);
 	font-size: var(--size-400);
 	line-height: var(--lh-400-p);
 }
 
 h1 {
-	color: var(--black-1);
+	color: var(--gray-900);
 	font-family: var(--display);
 	font-size: var(--size-700);
 	letter-spacing: -0.6px;
@@ -538,14 +704,14 @@ h1 {
 }
 
 h2 {
-	color: var(--black-1);
+	color: var(--gray-900);
 	font-size: var(--size-500);
 	font-weight: var(--bold);
 	margin-bottom: var(--2);
 }
 
 a {
-	color: var(--primary);
+	color: var(--blue-500);
 	font-weight: var(--plus);
 	text-decoration: none;
 }
@@ -566,7 +732,7 @@ ul {
 }
 
 code {
-	background-color: var(--black-7);
+	background-color: var(--gray-300);
 	border-radius: var(--br-default);
 	font-family: var(--mono);
 	padding: .22rem .25rem;
@@ -597,7 +763,7 @@ nav {
 
 .logo {
 	align-items: center;
-	color: var(--black-1);
+	color: var(--gray-900);
 	display: flex;
 	flex-direction: row;
 	font-family: var(--display);
@@ -616,7 +782,7 @@ nav {
 }
 
 .logo img {
-	fill: var(--primary);
+	fill: var(--blue-500);
 	height: var(--3);
 	width: var(--3);
 }
@@ -625,7 +791,7 @@ nav {
 /*  Tagline  */
 
 .tagline {
-	color: var(--black-3);
+	color: var(--gray-700);
 	display: block;
 	line-height: var(--lh-400-p);
 	margin-bottom: var(--3);
@@ -646,7 +812,7 @@ nav li {
 
 nav li a {
 	border-radius: var(--br-default);
-	color: var(--black-3);
+	color: var(--gray-700);
 	display: block;
 	font-size: var(--size-300);
 	line-height: 16px;
@@ -656,8 +822,8 @@ nav li a {
 }
 
 nav li a:hover, nav li a.active {
-	background-color: var(--black-7);
-	color: var(--black-1);
+	background-color: var(--gray-300);
+	color: var(--gray-900);
 	text-decoration: none;
 }
 
@@ -665,7 +831,7 @@ nav li a:hover, nav li a.active {
 /*  Credit  */
 
 .credit {
-	color: var(--black-3);
+	color: var(--gray-700);
 	font-family: var(--mono);
 	font-size: 12.5px;
 	margin-top: var(--5);
@@ -673,7 +839,7 @@ nav li a:hover, nav li a.active {
 }
 
 .credit a {
-	color: var(--black-3);	
+	color: var(--gray-700);	
 	display: inline;
 	text-decoration: underline;
 }
@@ -752,13 +918,13 @@ figure {
 }
 
 .prop-name {
-	color: var(--black-2);
+	color: var(--gray-800);
 	font-weight: var(--plus);
 	margin: 0;
 }
 
 .prop-type {
-	color: var(--black-4);
+	color: var(--gray-600);
 	font-family: var(--mono);
 	font-weight: 200;
 	margin: 0;
@@ -766,7 +932,7 @@ figure {
 
 .props p {
 	margin: 0;
-	color: var(--black-3);
+	color: var(--gray-700);
 	font-weight: var(--normal);
 }
 
@@ -805,7 +971,7 @@ section.index-intro {
 }
 
 .grid a {
-	color: var(--black-3);
+	color: var(--gray-700);
 	display: flex;
 	flex-direction: column;
 	font-weight: var(--plus);
@@ -824,13 +990,39 @@ section.index-intro {
 }
 
 .ul-header {
-	color: var(--black-4);
+	color: var(--gray-600);
 	display: block;
 	font-size: var(--size-100);
 	font-weight: var(--bold);
 	letter-spacing: 0.75px;
 	margin: var(--5) 0 var(--1) 0;
 	text-transform: uppercase;
+}
+
+/*
+.grid.swatches {
+	grid-template-columns: repeat(auto-fill,minmax(min(320px,100%),1fr));
+}
+*/
+
+.grid.swatches li {
+	gap: var(--2);
+	align-items: center;
+	font-weight: var(--plus);
+	color: var(--gray-900);
+}
+
+.grid.swatches div {
+	display: block;
+	height: var(--7);
+	width: var(--7);
+	border-radius: 6px;
+}
+
+.grid.swatches .text {
+	display: flex;
+	flex-direction: column;
+	gap: var(--1);
 }
 
 
