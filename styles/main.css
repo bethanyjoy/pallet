@@ -470,11 +470,9 @@ section.index-intro {
 		font-size: 1.75rem;
 	}
 	
-/*
-	header a {
+	a.back-arrow {
 		font-size: var(--size-500);
 	}
-*/
 	
 	.logo img {
 		height: var(--7);
