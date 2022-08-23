@@ -808,7 +808,7 @@ nav {
 	font-size: var(--size-700);
 	gap: var(--3);
 	height: var(--lh-700);
-	letter-spacing: -0.01em;
+	letter-spacing: -0.025em;
 	line-height: var(--lh-700);
 	margin-bottom: var(--6);
 	text-decoration: none;
