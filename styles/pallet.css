@@ -1,0 +1,674 @@
+:root {
+	
+	
+	/*	Colors */
+
+	--white: #FFFFFF;
+
+	--gray-900: #282A30;
+	--gray-800: #3D4148;
+	--gray-700: #6C6F75;
+	--gray-600: #91959C;
+	--gray-500: #C9CBCD;
+	--gray-400: #DFE1E4;
+	--gray-300: #EFF1F4;
+	--gray-200: #F4F5F8;
+	--gray-100: #F8F9FB;
+
+	--blue-700: #1D51D7;
+	--blue-600: #3365E4;
+	--blue-500: #4570E0;
+	--blue-400: #B9CCF8;
+	--blue-300: #D4E0FF;
+	--blue-200: #E5ECFF;
+	--blue-100: #EFF3FF;
+	
+	--green-500: #367642;
+	--green-400: #4A8F5D;
+	--green-300: #6AB586;
+	--green-200: #E2F9DA;
+	--green-100: #F0FCEC;
+		
+	--yellow-500: #996500;
+	--yellow-400: #DEA206;
+	--yellow-300: #F0C11C;
+	--yellow-200: #FFF4C3;
+	--yellow-100: #FFF9DD;
+	
+	--red-500: #C72D2D;
+	--red-400: #DE605B;
+	--red-300: #ED9591;
+	--red-200: #FDE5DB;
+	--red-100: #FEF2ED;
+	
+
+	/*	Fonts */
+
+	--sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	
+	
+	/*	Font size */
+	
+	--size-100: 0.688rem; /* 11px */
+	--size-200: 0.75rem;  /* 12px */
+	--size-300: 0.813rem; /* 13px */
+	--size-400: 0.938rem; /* 15px */
+	--size-500: 1.125rem; /* 18px */
+	--size-600: 1.25rem;  /* 20px */
+	--size-700: 1.5rem;   /* 24px */
+	
+	
+	/*	Line height */
+	
+	--lh-100: 0.813rem;  /* 13px */
+	--lh-200: 0.938rem;  /* 15px */
+	--lh-300: 1rem;      /* 16px */
+	--lh-400: 1.125rem;  /* 18px */
+	--lh-500: 1.375rem;  /* 22px */
+	--lh-600: 1.5rem;    /* 24px */
+	--lh-700: 1.813rem;  /* 29px */
+	
+	--lh-300-p: 1.25rem; /* 20px */
+	--lh-400-p: 1.5rem;  /* 24px */
+
+	
+	/* Font weight */
+
+	--normal: 400;
+	--plus: 500;
+	--bold: 600;
+	
+	
+	/* Size & Spacing */
+	
+	--0: 0px;
+	--px: 1px;
+	--0-5: 0.125rem;   /* 2px */
+	--1: 0.25rem;      /* 4px */
+	--1-5: 0.375rem;   /* 6px */
+	--2: 0.5rem;       /* 8px */
+	--2-5: 0.625rem;   /* 10px */
+	--3: 0.75rem;      /* 12px */
+	--3-5: 0.875rem;   /* 14px */
+	--4: 1rem;         /* 16px */
+	--5: 1.25rem;      /* 20px */
+	--6: 1.5rem;       /* 24px */
+	--7: 1.75rem;      /* 28px */
+	--8: 2rem;         /* 32px */
+	--9: 2.25rem;      /* 36px */
+	--10: 2.5rem;      /* 40px */
+	--11: 2.75rem;     /* 44px */
+	--12: 3rem;        /* 48px */
+	--14: 3.5rem;      /* 56px */
+	--16: 4rem;        /* 64px */
+	--20: 5rem;        /* 80px */
+	--24: 6rem;        /* 96px */
+	--28: 7rem;        /* 112px */
+	--32: 8rem;        /* 128px */
+	--36: 9rem;        /* 144px */
+	--40: 10rem;       /* 160px */
+	--44: 11rem;       /* 176px */
+	--48: 12rem;       /* 192px */
+	--52: 13rem;       /* 208px */
+	--56: 14rem;       /* 224px */
+	--60: 15rem;       /* 240px */
+	--64: 16rem;       /* 256px */
+	--72: 18rem;       /* 288px */
+	--80: 20rem;       /* 320px */
+	--96: 24rem;       /* 384px */
+	--100: 25rem;      /* 400px */
+
+	
+	/* Border radius */
+	
+	--br-small: 0.188rem;  /* 3px */
+	--br-default: 0.25rem; /* 4px */
+	--br-large: 0.5rem;    /* 8px */
+	
+	
+	/* Shadow */
+	
+	--shadow-button: var(--0) var(--px) var(--px) rgba(0, 0, 0, 0.06);
+	
+	
+	/* Border */
+	
+	--border: solid var(--px) var(--gray-400);
+	--divider: solid var(--px) var(--gray-300);
+
+}
+
+html {
+	font-size: 16px;
+}
+
+
+
+
+/*----------------------------------------------------*/
+/*  Text styles                                       */
+/*----------------------------------------------------*/
+
+
+/* Text sizes */
+
+.text-size-100 {
+	font-size: var(--size-100);
+	line-height: var(--lh-100);
+}
+
+.text-size-200 {
+	font-size: var(--size-200);
+	line-height: var(--lh-200);
+}
+
+.text-size-300 {
+	font-size: var(--size-300);
+	line-height: var(--lh-300);
+}
+
+.text-size-400 {
+	font-size: var(--size-400);
+	line-height: var(--lh-400);
+}
+
+.text-size-500 {
+	font-size: var(--size-500);
+	line-height: var(--lh-500);
+}
+
+.text-size-600 {
+	font-size: var(--size-600);
+	line-height: var(--lh-600);
+}
+
+.text-size-700 {
+	font-size: var(--size-700);
+	line-height: var(--lh-700);
+}
+
+
+/* Paragraph styles */
+
+.text-size-300.p {
+	line-height: var(--lh-300-p);
+}
+
+.text-size-400.p {
+	line-height: var(--lh-400-p);
+}
+
+
+/* Font weight styles */
+
+.plus {
+	font-weight: var(--plus);
+}
+
+.bold {
+	font-weight: var(--bold);
+}
+
+
+
+
+/*----------------------------------------------------*/
+/*  Color styles                                      */
+/*----------------------------------------------------*/
+
+
+/* White */
+
+.bg-white {
+	background-color: var(--white);
+	border: var(--border);
+}
+
+
+/* Gray */
+
+.bg-gray-900 {
+	background-color: var(--gray-900);
+}
+
+.bg-gray-800 {
+	background-color: var(--gray-800);
+}
+
+.bg-gray-700 {
+	background-color: var(--gray-700);
+}
+
+.bg-gray-600 {
+	background-color: var(--gray-600);
+}
+
+.bg-gray-500 {
+	background-color: var(--gray-500);
+}
+
+.bg-gray-400 {
+	background-color: var(--gray-400);
+}
+
+.bg-gray-300 {
+	background-color: var(--gray-300);
+}
+
+.bg-gray-200 {
+	background-color: var(--gray-200);
+}
+
+.bg-gray-100 {
+	background-color: var(--gray-100);
+}
+
+
+/* Blue */
+
+.bg-blue-700 {
+	background-color: var(--blue-700);
+}
+
+.bg-blue-600 {
+	background-color: var(--blue-600);
+}
+
+.bg-blue-500 {
+	background-color: var(--blue-500);
+}
+
+.bg-blue-400 {
+	background-color: var(--blue-400);
+}
+
+.bg-blue-300 {
+	background-color: var(--blue-300);
+}
+
+.bg-blue-200 {
+	background-color: var(--blue-200);
+}
+
+.bg-blue-100 {
+	background-color: var(--blue-100);
+}
+
+
+/* Green */
+
+.bg-green-500 {
+	background-color: var(--green-500);
+}
+
+.bg-green-400 {
+	background-color: var(--green-400);
+}
+
+.bg-green-300 {
+	background-color: var(--green-300);
+}
+
+.bg-green-200 {
+	background-color: var(--green-200);
+}
+
+.bg-green-100 {
+	background-color: var(--green-100);
+}
+
+
+/* Yellow */
+
+.bg-yellow-500 {
+	background-color: var(--yellow-500);
+}
+
+.bg-yellow-400 {
+	background-color: var(--yellow-400);
+}
+
+.bg-yellow-300 {
+	background-color: var(--yellow-300);
+}
+
+.bg-yellow-200 {
+	background-color: var(--yellow-200);
+}
+
+.bg-yellow-100 {
+	background-color: var(--yellow-100);
+}
+
+
+/* Red */
+
+.bg-red-500 {
+	background-color: var(--red-500);
+}
+
+.bg-red-400 {
+	background-color: var(--red-400);
+}
+
+.bg-red-300 {
+	background-color: var(--red-300);
+}
+
+.bg-red-200 {
+	background-color: var(--red-200);
+}
+
+.bg-red-100 {
+	background-color: var(--red-100);
+}
+
+
+
+
+/*----------------------------------------------------*/
+/*  Button styles                                     */
+/*----------------------------------------------------*/
+
+
+/* Default button */
+
+button {
+	
+	/* Global */
+
+	align-items: center;
+	border-radius: var(--br-default);
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex: none;
+	flex-direction: row;
+	flex-grow: 0;
+	font-weight: var(--plus);
+	justify-content: center;
+	order: 0;
+	
+	/* Sizing */
+
+	gap: var(--1);
+	height: var(--8);
+	padding: var(--2) var(--3-5);
+
+	/* Color */
+
+	background: var(--white);
+	border: var(--px) solid var(--gray-400);
+	box-shadow: var(--shadow-button);
+	color: var(--gray-800);
+	fill: var(--gray-700);
+	
+	/* Text */
+	
+	font-size: var(--size-300);
+	font-weight: var(--plus);
+	
+}
+
+button svg {
+	height: var(--4);
+	width: var(--4);
+}
+
+button:hover {
+	background: var(--gray-100);
+}
+
+button:active {
+	background: var(--gray-200);
+}
+
+
+/* Primary button */
+
+button.primary {
+	background: var(--blue-500);
+	border: none;
+	color: var(--white);
+}
+
+button.primary:hover {
+	background: var(--blue-600);
+}
+
+button.primary:active {
+	background: var(--blue-700);
+}
+
+
+/* Minimal button */
+
+button.minimal {
+	border: var(--px) solid var(--white);
+	box-shadow: none;
+}
+
+button.minimal:hover {
+	background: var(--gray-100);
+	border: var(--px) solid var(--gray-400);
+	box-shadow: var(--shadow-button);
+}
+
+button.minimal:active {
+	background: var(--gray-200);
+	border: var(--px) solid var(--gray-400);
+	box-shadow: var(--shadow-button);
+}
+
+
+/* Outline button */
+
+button.outline {
+	background: none;
+	border: var(--px) solid var(--gray-600);
+	box-shadow: none;
+}
+
+button.outline:hover {
+	background: none;
+	border: var(--px) solid var(--gray-700);
+}
+
+button.outline:active {
+	background: none;
+	border: var(--px) solid var(--gray-700);
+}
+
+
+/* Plain button */
+
+button.plain {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: var(--blue-500);
+	font-weight: var(--normal);
+	height: var(--4);
+	padding: var(--0);
+}
+
+button.plain:hover {
+	background: none;
+	border: none;
+	color: var(--blue-600);
+	text-decoration: underline;
+}
+
+button.plain:active {
+	background: none;
+	border: none;
+	color: var(--blue-600);
+	text-decoration: underline;
+}
+
+
+/* Destructive buttons */
+
+button.destructive {
+	color: var(--red-400);
+}
+
+button.destructive:hover {
+	color: var(--red-500);
+}
+
+button.destructive:active {
+	color: var(--red-500);
+}
+
+button.primary.destructive {
+	background: var(--red-400);
+	color: var(--white);
+}
+
+button.primary.destructive:hover {
+	background: var(--red-500);
+	color: var(--white);
+}
+
+button.primary.destructive:active {
+	background: var(--red-500);
+	color: var(--white);
+}
+
+
+/* Disabled buttons */
+
+button.disabled {
+	box-shadow: none;
+	color: var(--gray-600);
+	cursor: none;
+	pointer-events: none;
+}
+
+button.primary.disabled {
+	background: var(--blue-400);
+	color: var(--white);
+}
+
+button.outline.disabled {
+	border: var(--px) solid var(--gray-400);
+}
+
+button.plain.disabled {
+	color: var(--gray-500);
+}
+
+
+/* Button sizes */
+
+button.slim {
+	height: var(--7);
+	padding: var(--1-5) var(--2);
+}
+
+button.large {
+	height: var(--10);
+	padding: var(--2) var(--3-5);
+}
+
+
+
+/*----------------------------------------------------*/
+/*  Checkbox styles                                   */
+/*----------------------------------------------------*/
+
+
+/* Customize the label (the container) */
+.checkbox {
+	align-items: center;
+	color: var(--gray-900);
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	gap: var(--2);
+	height: var(--6);
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+	height: var(--0);
+	opacity: 0;
+	position: absolute;
+	width: var(--0);
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	border: var(--px) solid var(--gray-400);
+	border-radius: var(--br-small);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: var(--3-5);
+	width: var(--3-5);
+}
+
+/* On mouse-over, change border color */
+.checkbox:hover input ~ .checkmark {
+	border: var(--px) solid var(--gray-500);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+	background-color: var(--blue-500);
+	border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark svg {
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark svg {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark svg {
+	fill: var(--white);
+	height: var(--3);
+	padding: var(--px);
+	width: var(--3);
+}
+
+.checkbox.disabled {
+	color: var(--gray-600);
+	cursor: none;
+	pointer-events: none;
+}
+
+.checkbox.disabled .checkmark {
+	background-color: var(--gray-300);
+	border: none;
+}
+
+.checkbox.checked .checkmark svg {
+	display: block;
+	fill: var(--gray-600);
+}
+
+
+/*----------------------------------------------------*/
+/*  Spinner                                           */
+/*----------------------------------------------------*/
+
+.spinner {
+	-webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
