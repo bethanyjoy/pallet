@@ -950,6 +950,7 @@ figure {
 	padding: var(--6);
 	width: calc(100% - var(--12));
 	margin-top: var(--4);
+	overflow-x: hidden;
 }
 
 .flex-column {
@@ -1128,7 +1129,7 @@ section.index-intro {
 */
 	
 	html {
-		font-size: 18px;
+		font-size: 19px;
 	}
 	
 /*
