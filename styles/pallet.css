@@ -379,7 +379,7 @@ button {
 
 	align-items: center;
 	border-radius: var(--br-default);
-	box-sizing: border-box;
+/*	box-sizing: border-box;*/
 	cursor: pointer;
 	display: flex;
 	flex: none;
@@ -444,8 +444,9 @@ button.primary:active {
 /* Minimal button */
 
 button.minimal {
-	border: var(--px) solid var(--white);
 	box-shadow: none;
+	border: var(--px) solid var(--gray-100);
+	background: none;
 }
 
 button.minimal:hover {

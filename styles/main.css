@@ -21,6 +21,7 @@
 /*  Dark Mode Styles  */
 
 
+/*
 body[light-mode=dark] {
 	background-color: var(--gray-900);
 	color: var(--gray-200);
@@ -75,6 +76,7 @@ body[light-mode=dark] figure {
 	background-color: var(--white);
 	border: none;
 }
+*/
 
 
 
@@ -361,6 +363,7 @@ figure {
 	width: calc(100% - var(--12));
 	margin-top: var(--4);
 	overflow-x: scroll;
+/*	background-color: var(--gray-100);*/
 }
 
 .flex-column {
@@ -453,13 +456,19 @@ section.index-intro {
 /*	border-radius: var(--br-large);*/
 	width: 100%;
 /*	background-color: var(--gray-100);*/
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+/*
+	-webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 
   	filter: grayscale(100%);
-	opacity: 80%;
+*/
+/*	opacity: 60%;*/
 }
 
 img.dark {
 	display: none;
+}
+
+img.hover {
+	display: none
 }
 
 .index .grid div {
@@ -471,11 +480,22 @@ img.dark {
 	box-sizing: border-box;
 */
 }
+/*
 
 .grid a:hover img {
-	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+	-webkit-filter: none;  Safari 6.0 - 9.0 
   	filter: none;
 	opacity: 100%;
+}
+*/
+
+.grid a:hover img.initial {
+	display: none;
+}
+
+.grid a:hover img.hover {
+	display: inline-block;
+		opacity: 100%;
 }
 
 
