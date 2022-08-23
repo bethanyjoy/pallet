@@ -89,6 +89,8 @@ code {
 	border-radius: var(--br-default);
 	font-family: var(--mono);
 	padding: var(--0-5) var(--1);
+	color: var(--gray-700);
+	font-size: 0.98em;
 }
 
 
@@ -296,6 +298,7 @@ figure {
 	font-weight: 200;
 	margin: var(--0);
 	line-height: 1.5em
+	font-size: 0.9em;
 }
 
 .props p {
