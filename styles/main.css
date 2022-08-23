@@ -726,6 +726,12 @@ a[data-external-link-arrow=true]:after {
 	margin-left: .25em;
 }
 
+a[data-back-arrow=true]:before {
+	content: "←";
+	display: inline-block;
+	margin-right: .25em;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
@@ -848,8 +854,13 @@ nav li a:hover, nav li a.active {
 /*  Header  */
 
 header {
-	margin-bottom: var(--8);
 	display: none;
+	margin-bottom: var(--6);
+	margin-top: var(--2);
+}
+
+.index header {
+	margin-bottom: var(--10);
 }
 
 
@@ -1058,6 +1069,9 @@ section.index-intro {
 		font-size:17px;
 	}
 */
+	body {
+		font-size: var(--size-400);
+	}
 
 	nav {
 		display:none;
@@ -1073,7 +1087,11 @@ section.index-intro {
 	}
 	
 	.logo {
-			font-size: 28px;
+		font-size: 28px;
+	}
+	
+	header a {
+		font-size: var(--size-500);
 	}
 	
 	.logo img {
@@ -1105,6 +1123,16 @@ section.index-intro {
 	h1 {
 		font-family: var(--sans-serif);
 		font-weight: 600;
+	}
+	
+/*
+	.index section h2 {
+		font-size: var(--size-700);
+	}
+*/
+	
+	.index section {
+		margin-top: var(--10);
 	}
 	
 }
