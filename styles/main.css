@@ -347,6 +347,10 @@ section.index-intro {
 	line-height: 1.6em;
 }
 
+.index section {
+	margin-top: var(--16);
+}
+
 
 /*	Example styles */
 
@@ -428,7 +432,7 @@ section.index-intro {
 .grid {
 	display: grid;
 	gap: var(--8);
-	grid-gap: var(--8);
+	grid-gap: var(--12) var(--8);
 	grid-template-columns: repeat(auto-fill,minmax(min(13.6rem,100%),1fr));
 	margin-top: var(--8);
 }
@@ -442,7 +446,7 @@ section.index-intro {
 	display: flex;
 	flex-direction: column;
 	font-weight: var(--plus);
-	gap: var(--4);
+	gap: var(--5);
 	position: relative;
 	text-decoration: none;
 	width: 100%;
