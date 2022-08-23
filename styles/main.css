@@ -469,13 +469,7 @@ section.index-intro {
 	.logo {
 		font-size: 1.75rem;
 	}
-	
-/*
-	header a {
-		font-size: var(--size-500);
-	}
-*/
-	
+		
 	.logo img {
 		height: var(--7);
 		width: var(--7);
@@ -487,6 +481,11 @@ section.index-intro {
 		line-height: 160%;
 	}
 */
+	
+	a.back-arrow {
+		font-size: var(--size-500);
+	}
+
 
 	main {
 		padding: var(--12) var(--6);
