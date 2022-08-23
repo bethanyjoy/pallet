@@ -845,6 +845,14 @@ nav li a:hover, nav li a.active {
 }
 
 
+/*  Header  */
+
+header {
+	margin-bottom: var(--8);
+	display: none;
+}
+
+
 
 /*----------------------------------------------------*/
 /*  Main content styles                               */
@@ -1053,6 +1061,10 @@ section.index-intro {
 
 	nav {
 		display: none;
+	}
+	
+	header {
+		display: block;
 	}
 
 	main {
