@@ -950,7 +950,7 @@ figure {
 	padding: var(--6);
 	width: calc(100% - var(--12));
 	margin-top: var(--4);
-	overflow-x: hidden;
+	overflow-x: scroll;
 }
 
 .flex-column {
@@ -1139,7 +1139,7 @@ section.index-intro {
 */
 
 	nav {
-		display:none;
+		display: none;
 /*
 		position:fixed;
 		background-color:var(--white);
@@ -1203,6 +1203,14 @@ section.index-intro {
 		font-family: var(--sans-serif);
 		font-weight: 600;
 	}
+	
+/*
+	.grid img {
+		-webkit-filter: none;  Safari 6.0 - 9.0 
+		filter: none;
+		opacity:100%;
+	}
+*/
 	
 /*
 	.index section h2 {
