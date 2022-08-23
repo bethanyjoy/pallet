@@ -1060,11 +1060,30 @@ section.index-intro {
 */
 
 	nav {
-		display: none;
+		display:none;
+/*
+		position:fixed;
+		background-color:var(--white);
+		z-index:1000;
+*/
 	}
 	
 	header {
 		display: block;
+	}
+	
+	.logo {
+			font-size: 28px;
+	}
+	
+	.logo img {
+		height: 28px;
+		width: 28px;
+	}
+	
+	.tagline {
+		font-size: var(--size-500);
+		line-height: 160%;
 	}
 
 	main {
