@@ -445,13 +445,23 @@ section.index-intro {
 	padding: var(--10) var(--6);
 	width: calc(100% - var(--12));
 	margin-top: var(--4);
-	grid-gap: var(--12) var(--8);
+	grid-gap: var(--12) var(--6);
 }
 
-.icons .grid svg {
+.icons figure {
+	gap: var(--10);
+	padding: var(--8);
+	width: calc(100% - var(--16));
+}
+
+.icons figure svg {
 	width: var(--6);
 	height: var(--6);
-	margin: auto;
+}
+
+.icons figure.mini svg {
+	width: var(--5);
+	height: var(--5);
 }
 
 .icons .grid li {
