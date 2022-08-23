@@ -856,7 +856,6 @@ nav li a:hover, nav li a.active {
 header {
 	display: none;
 	margin-bottom: var(--6);
-	margin-top: var(--2);
 }
 
 .index header {
@@ -1105,7 +1104,7 @@ section.index-intro {
 	}
 
 	main {
-		padding: var(--4) var(--3);
+		padding: var(--6) var(--3);
 	}
 	
 	.prop-name {
