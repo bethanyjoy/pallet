@@ -437,6 +437,27 @@ section.index-intro {
 	margin-top: var(--8);
 }
 
+.icons .grid {
+	grid-template-columns: repeat(auto-fill,minmax(min(6rem,100%),1fr));
+	border: var(--border);
+	border-radius: var(--br-large);
+	border-sizing: border-box;
+	padding: var(--10) var(--6);
+	width: calc(100% - var(--12));
+	margin-top: var(--4);
+	grid-gap: var(--12) var(--8);
+}
+
+.icons .grid svg {
+	width: var(--6);
+	height: var(--6);
+	margin: auto;
+}
+
+.icons .grid li {
+	text-align: center;
+}
+
 .grid li {
 	display: flex;
 }

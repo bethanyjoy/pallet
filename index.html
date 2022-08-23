@@ -28,25 +28,6 @@
 </head>
 
 <body class="index">
-	
-	<script>
-		
-//		Keeps same color mode when page is refreshed	
-		var app = document.getElementsByTagName("BODY")[0];
-		if (localStorage.lightMode == "dark") {
-			app.setAttribute("light-mode", "dark");
-		}
-		
-//		Keeps same color mode across different tabs and windows	
-		window.addEventListener("storage", function () {
-			if (localStorage.lightMode == "dark") {
-				app.setAttribute("light-mode", "dark");
-			} else {
-				app.setAttribute("light-mode", "light");
-			}
-		}, false);
-		
-	</script>
 
 	<nav>
 		
@@ -232,7 +213,7 @@
 <!--				<li><a href="result.html"><img src="assets/thumbnails/result.png">Result</a></li>-->
 <!--				<li><a href="save-bar.html"><img src="assets/thumbnails/save-bar.png">Save bar</a></li>-->
 <!--				<li><a href="search.html"><img src="assets/thumbnails/search.png">Search</a></li>-->
-<!--				<li><a href="segmented-input.html"><img src="assets/thumbnails/segment-input.png">Segmented input</a></li>-->
+				<li><a href="segmented-input.html"><div><img src="assets/thumbnails/segmented-input-grayscale.png"class="initial"><img src="assets/thumbnails/segmented-input.png"class="hover"></div>Segmented input</a></li>
 				<li><a href="select.html"><div><img src="assets/thumbnails/select-grayscale.png" class="initial"><img src="assets/thumbnails/select.png" class="hover"></div>Select</a></li>
 <!--				<li><a href="setting-toggle.html"><img src="assets/thumbnails/setting-toggle.png">Setting toggle</a></li>-->
 <!--				<li><a href="sheet.html"><img src="assets/thumbnails/sheet.png">Sheet</a></li>-->
@@ -253,22 +234,6 @@
 						
 	
 	</main>
-	
-	<script>
-		
-//		Triggers change in color mode when button is clicked
-		function toggle_light_mode() {
-			var app = document.getElementsByTagName("BODY")[0];
-			if (localStorage.lightMode == "dark") {
-			localStorage.lightMode = "light";
-			app.setAttribute("light-mode", "light");
-			} else {
-			localStorage.lightMode = "dark";
-			app.setAttribute("light-mode", "dark");
-			}		
-		}
-		
-	</script>
 
 </body>
 
