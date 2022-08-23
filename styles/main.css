@@ -247,7 +247,7 @@ section.index-intro {
 .intro p {
 	font-size: var(--size-500);
 	font-weight: var(--normal);
-	line-height: 160%;
+	line-height: 1.6em;
 }
 
 
@@ -295,6 +295,7 @@ figure {
 	font-family: var(--mono);
 	font-weight: 200;
 	margin: var(--0);
+	line-height: 1.5em
 }
 
 .props p {
@@ -511,6 +512,10 @@ section.index-intro {
 	h1 {
 		font-family: var(--sans-serif);
 		font-weight: 600;
+	}
+	
+	.props .text-row {
+		flex-direction: column;
 	}
 	
 /*
