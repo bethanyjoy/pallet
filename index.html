@@ -28,6 +28,25 @@
 </head>
 
 <body class="index">
+	
+	<script>
+		
+//		Keeps same color mode when page is refreshed	
+		var app = document.getElementsByTagName("BODY")[0];
+		if (localStorage.lightMode == "dark") {
+			app.setAttribute("light-mode", "dark");
+		}
+		
+//		Keeps same color mode across different tabs and windows	
+		window.addEventListener("storage", function () {
+			if (localStorage.lightMode == "dark") {
+				app.setAttribute("light-mode", "dark");
+			} else {
+				app.setAttribute("light-mode", "light");
+			}
+		}, false);
+		
+	</script>
 
 	<nav>
 		
@@ -41,6 +60,13 @@
 		<a href="https://www.figma.com/file/B1SvADcCG4a8LbE224mcjT/Pallet-Design-System?node-id=807%3A284811" target="_blank" data-external-link-arrow="true" class="external-link">
 			Figma file
 		</a>
+		
+<!--
+		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+			<span class="light-icon">💡</span>
+			<span class="dark-icon">🌙</span>
+		</button>
+-->
 		
 <!--
 		<ul class="all">
@@ -155,9 +181,9 @@
 			</section>
 			
 			<ul class="grid">
-				<li><a href="color.html"><div><img src="assets/thumbnails/color.png"></div>Color</a></li>
-				<li><a href="icons.html"><div><img src="assets/thumbnails/icons.png"></div>Icons</a></li>
-				<li><a href="typography.html"><div><img src="assets/thumbnails/typography.png"></div>Typography</a></li>
+				<li><a href="color.html"><div><img src="assets/thumbnails/color.png" class="light"><img src="assets/thumbnails/color.png" class="dark"></div>Color</a></li>
+				<li><a href="icons.html"><div><img src="assets/thumbnails/icons.png" class="light"><img src="assets/thumbnails/icons-dark.png" class="dark"></div>Icons</a></li>
+				<li><a href="typography.html"><div><img src="assets/thumbnails/typography.png" class="light"><img src="assets/thumbnails/typography-dark.png" class="dark"></div>Typography</a></li>
 			</ul>
 		
 			<section>	
@@ -167,14 +193,14 @@
 			<ul class="grid">
 <!--				<li><a href="action-list.html"><img src="assets/thumbnails/action-list.png">Action list</a></li>-->
 <!--				<li><a href="autocomplete.html"><img src="assets/thumbnails/autocomplete.png">Autocomplete</a></li>-->
-				<li><a href="avatar.html"><div><img src="assets/thumbnails/avatar.png"></div>Avatar</a></li>
+				<li><a href="avatar.html"><div><img src="assets/thumbnails/avatar.png" class="light"><img src="assets/thumbnails/avatar.png" class="dark"></div>Avatar</a></li>
 				<li><a href="badge.html"><div><img src="assets/thumbnails/badge.png"></div>Badge</a></li>
 				<li><a href="banner.html"><div><img src="assets/thumbnails/banner.png"></div>Banner</a></li>
 				<li><a href="button.html"><div><img src="assets/thumbnails/button.png"></div>Button</a></li>
 				<li><a href="button-group.html"><div><img src="assets/thumbnails/button-group.png"></div>Button group</a></li>
 <!--				<li><a href="callout-card.html"><img src="assets/thumbnails/callout-card.png">Callout card</a></li>-->
 <!--				<li><a href="card.html"><img src="assets/thumbnails/card.png">Card</a></li>-->
-				<li><a href="checkbox.html"><div><img src="assets/thumbnails/checkbox.png"></div>Checkbox</a></li>
+				<li><a href="checkbox.html"><div><img src="assets/thumbnails/checkbox.png" class="light"><img src="assets/thumbnails/checkbox-dark.png" class="dark"></div>Checkbox</a></li>
 <!--				<li><a href="choice-list.html"><img src="assets/thumbnails/choice.png">Choice list</a></li>-->
 <!--				<li><a href="data-table.html"><img src="assets/thumbnails/data-table.png">Data table</a></li>-->
 <!--				<li><a href="date-picker.html"><img src="assets/thumbnails/date-picker.png">Date picker</a></li>-->
@@ -200,22 +226,22 @@
 <!--				<li><a href="pagination.html"><img src="assets/thumbnails/pagination.png">Pagination</a></li>-->
 <!--				<li><a href="popover.html"><img src="assets/thumbnails/popover.png">Popover</a></li>-->
 <!--				<li><a href="progress-bar.html"><img src="assets/thumbnails/progress-bar.png">Progress bar</a></li>-->
-				<li><a href="radio-button.html"><div><img src="assets/thumbnails/radio-button.png"></div>Radio button</a></li>
+				<li><a href="radio-button.html"><div><img src="assets/thumbnails/radio-button.png" class="light"><img src="assets/thumbnails/radio-button-dark.png" class="dark"></div>Radio button</a></li>
 <!--				<li><a href="range-slider.html"><img src="assets/thumbnails/range-slider.png">Range slider</a></li>-->
 <!--				<li><a href="resource-list.html"><img src="assets/thumbnails/resource-list.png">Resource list</a></li>-->
 <!--				<li><a href="result.html"><img src="assets/thumbnails/result.png">Result</a></li>-->
 <!--				<li><a href="save-bar.html"><img src="assets/thumbnails/save-bar.png">Save bar</a></li>-->
 <!--				<li><a href="search.html"><img src="assets/thumbnails/search.png">Search</a></li>-->
 <!--				<li><a href="segemented-input.html"><img src="assets/thumbnails/segment-input.png">Segmented input</a></li>-->
-				<li><a href="select.html"><div><img src="assets/thumbnails/select.png"></div>Select</a></li>
+				<li><a href="select.html"><div><img src="assets/thumbnails/select.png" class="light"><img src="assets/thumbnails/select-dark.png" class="dark"></div>Select</a></li>
 <!--				<li><a href="setting-toggle.html"><img src="assets/thumbnails/setting-toggle.png">Setting toggle</a></li>-->
 <!--				<li><a href="sheet.html"><img src="assets/thumbnails/sheet.png">Sheet</a></li>-->
 <!--				<li><a href="skeleton.html"><img src="assets/thumbnails/skeleton.png">Skeleton</a></li>-->
 				<li><a href="spinner.html"><div><img src="assets/thumbnails/spinner.png"></div>Spinner</a></li>
-				<li><a href="switch.html"><div><img src="assets/thumbnails/switch.png"></div>Switch</a></li>
+				<li><a href="switch.html"><div><img src="assets/thumbnails/switch.png" class="light"><img src="assets/thumbnails/switch-dark.png" class="dark"></div>Switch</a></li>
 <!--				<li><a href="tabs.html"><img src="assets/thumbnails/tabs.png">Tabs</a></li>-->
 				<li><a href="tag.html"><div><img src="assets/thumbnails/tag.png"></div>Tag</a></li>
-				<li><a href="text-field.html"><div><img src="assets/thumbnails/text-field.png"></div>Text field</a></li>
+				<li><a href="text-field.html"><div><img src="assets/thumbnails/text-field.png" class="light"><img src="assets/thumbnails/text-field-dark.png" class="dark"></div>Text field</a></li>
 				<li><a href="thumbnail.html"><div><img src="assets/thumbnails/thumbnail.png"></div>Thumbnail</a></li>
 <!--				<li><a href="toast.html"><img src="assets/thumbnails/toast.png">Toast</a></li>-->
 <!--				<li><a href="toggle.html"><img src="assets/thumbnails/toggle.png">Toggle</a></li>-->
@@ -227,6 +253,22 @@
 						
 	
 	</main>
+	
+	<script>
+		
+//		Triggers change in color mode when button is clicked
+		function toggle_light_mode() {
+			var app = document.getElementsByTagName("BODY")[0];
+			if (localStorage.lightMode == "dark") {
+			localStorage.lightMode = "light";
+			app.setAttribute("light-mode", "light");
+			} else {
+			localStorage.lightMode = "dark";
+			app.setAttribute("light-mode", "dark");
+			}		
+		}
+		
+	</script>
 
 </body>
 

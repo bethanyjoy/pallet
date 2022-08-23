@@ -28,6 +28,25 @@
 </head>
 
 <body>
+	
+	<script>
+		
+//		Keeps same color mode when page is refreshed	
+		var app = document.getElementsByTagName("BODY")[0];
+		if (localStorage.lightMode == "dark") {
+			app.setAttribute("light-mode", "dark");
+		}
+		
+//		Keeps same color mode across different tabs and windows	
+		window.addEventListener("storage", function () {
+			if (localStorage.lightMode == "dark") {
+				app.setAttribute("light-mode", "dark");
+			} else {
+				app.setAttribute("light-mode", "light");
+			}
+		}, false);
+		
+	</script>
 
 	<nav>
 		
@@ -41,6 +60,13 @@
 		<a href="https://www.figma.com/file/B1SvADcCG4a8LbE224mcjT/Pallet-Design-System?node-id=807%3A284811" target="_blank" data-external-link-arrow="true" class="external-link">
 			Figma file
 		</a>
+		
+<!--
+		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+			<span class="light-icon">💡</span>
+			<span class="dark-icon">🌙</span>
+		</button>
+-->
 		
 		<span class="ul-header">Styles</span>
 		<ul>
@@ -392,6 +418,22 @@
 		</article>
 	
 	</main>
+	
+	<script>
+		
+//		Triggers change in color mode when button is clicked
+		function toggle_light_mode() {
+			var app = document.getElementsByTagName("BODY")[0];
+			if (localStorage.lightMode == "dark") {
+			localStorage.lightMode = "light";
+			app.setAttribute("light-mode", "light");
+			} else {
+			localStorage.lightMode = "dark";
+			app.setAttribute("light-mode", "dark");
+			}		
+		}
+		
+	</script>
 
 </body>
 

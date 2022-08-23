@@ -17,6 +17,68 @@
 
 
 
+
+/*  Dark Mode Styles  */
+
+
+body[light-mode=dark] {
+	background-color: var(--gray-900);
+	color: var(--gray-200);
+}
+
+body[light-mode=dark] .logo {
+	color: var(--white);
+}
+
+body[light-mode=dark] .tagline {
+	color: var(--gray-600);
+}
+
+body[light-mode=dark] h1 {
+	color: var(--white);
+}
+
+body[light-mode=dark] h2 {
+	color: var(--white);
+}
+
+body[light-mode=dark] .dark-icon {
+	display: block;
+}
+
+body[light-mode=dark] .light-icon {
+	display: none;
+}
+
+body[light-mode=dark] .external-link, .back-arrow {
+	color: var(--blue-400);
+}
+
+body[light-mode=dark] nav {
+	border-right: 1px solid var(--gray-800);
+}
+
+body.index[light-mode=dark] .grid div {
+	background-color: var(--gray-800);
+}
+
+
+body.index[light-mode=dark] img.dark {
+	display: block;
+}
+
+body.index[light-mode=dark] img.light {
+	display: none;
+}
+
+body[light-mode=dark] figure {
+	background-color: var(--white);
+	border: none;
+}
+
+
+
+
 /*----------------------------------------------------*/
 /*  Global Styles                                     */
 /*----------------------------------------------------*/
@@ -212,6 +274,37 @@ header {
 }
 
 
+nav button {
+	background-color: rgba(0,0,0,0);
+	margin 0;
+	margin-top: var(--4);
+	border: none;
+	cursor: pointer;
+	padding: 1px 4px;
+}
+
+nav button:hover {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+}
+
+nav button:active {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+}
+
+.light-icon {
+	display: block;
+}
+
+.dark-icon {
+	display: none;
+}
+
+
+
 
 /*----------------------------------------------------*/
 /*  Main content styles                               */
@@ -363,6 +456,10 @@ section.index-intro {
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   	filter: grayscale(100%);
 	opacity:80%;
+}
+
+img.dark {
+	display: none;
 }
 
 .index .grid div {
