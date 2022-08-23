@@ -445,7 +445,7 @@ button.primary:active {
 
 button.minimal {
 	box-shadow: none;
-	border: var(--px) solid var(--gray-100);
+	border: var(--px) solid var(--white);
 	background: none;
 }
 
