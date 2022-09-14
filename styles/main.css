@@ -597,6 +597,47 @@ img.hover {
 
 
 
+
+
+
+
+
+
+.credit.mobile {
+	display:none;
+}
+
+pre code {
+  display: block;
+  background: var(--gray-100);
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0;
+	font-size: var(--font-size-100);
+	line-height: var(--font-line-height-200);
+	border: var(--border-default);
+	border-radius: var(--border-radius-2);
+	margin: var(--space-0);
+	padding: var(--space-6);
+/*	margin-top: var(--space-4);*/
+}
+
+
+figure p {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
 
 /*
@@ -726,34 +767,19 @@ img.hover {
 		border-color: var(--gray-300);
 		box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09);
 	}
+	
+	.credit.mobile {
+		display:block;
+		margin-top: var(--space-16);
+}
 
 }
 
 
 
 
-pre code {
-  display: block;
-  background: var(--gray-100);
-  white-space: pre;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  max-width: 100%;
-  min-width: 100px;
-  padding: 0;
-	font-size: var(--font-size-100);
-	line-height: var(--font-line-height-200);
-	border: var(--border-default);
-	border-radius: var(--border-radius-2);
-	margin: var(--space-0);
-	padding: var(--space-6);
-/*	margin-top: var(--space-4);*/
-}
 
 
-figure p {
-	margin: 0;
-}
 
 
 
