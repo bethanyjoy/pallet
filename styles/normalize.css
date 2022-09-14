@@ -347,3 +347,16 @@ template {
 [hidden] {
   display: none;
 }
+
+
+
+
+
+
+/*This means that padding and border will be included in the calculation of any elements computed final size instead of increasing the computed size beyond any set dimensions.*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

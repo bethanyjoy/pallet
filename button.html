@@ -28,25 +28,6 @@
 </head>
 
 <body>
-	
-	<script>
-		
-//		Keeps same color mode when page is refreshed	
-		var app = document.getElementsByTagName("BODY")[0];
-		if (localStorage.lightMode == "dark") {
-			app.setAttribute("light-mode", "dark");
-		}
-		
-//		Keeps same color mode across different tabs and windows	
-		window.addEventListener("storage", function () {
-			if (localStorage.lightMode == "dark") {
-				app.setAttribute("light-mode", "dark");
-			} else {
-				app.setAttribute("light-mode", "light");
-			}
-		}, false);
-		
-	</script>
 
 	<nav>
 		
@@ -61,79 +42,74 @@
 			Figma file
 		</a>
 		
-<!--
-		<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-			<span class="light-icon">💡</span>
-			<span class="dark-icon">🌙</span>
-		</button>
--->
-		
-		<span class="ul-header">Styles</span>
-		<ul>
-			<li><a href="color.html">Color</a></li>
-			<li><a href="icons.html">Icons</a></li>
-			<li><a href="typography.html">Typography</a></li>
+		<span class="ul-header">Foundations</span>
+		<ul class="nav-items">
+			<li class="color"><a href="color.html">Color</a></li>
+			<li class="icons"><a href="icons.html">Icons</a></li>
+			<li class="shadow"><a href="shadow.html">Shadow</a></li>
+			<li class="shape"><a href="shape.html">Shape</a></li>
+			<li class="space"><a href="space.html">Space</a></li>
+			<li class="typography"><a href="typography.html">Typography</a></li>
 		</ul>
-
+		
 		<span class="ul-header">Components</span>
-		<ul>
-<!--			<li><a href="index.html" class="active">All</a></li>-->
-<!--			<li><a href="action-list.html">Action list</a></li>-->
-<!--			<li><a href="autocomplete.html">Autocomplete</a></li>-->
-			<li><a href="avatar.html">Avatar</a></li>
-			<li><a href="badge.html">Badge</a></li>
-			<li><a href="banner.html">Banner</a></li>
-			<li><a href="button.html" class="active">Button</a></li>
-			<li><a href="button-group.html">Button group</a></li>
-<!--			<li><a href="callout-card.html">Callout card</a></li>-->
-<!--			<li><a href="card.html">Card</a></li>-->
-			<li><a href="checkbox.html">Checkbox</a></li>
-<!--			<li><a href="choice-list.html">Choice list</a></li>-->
-<!--			<li><a href="data-table.html">Data table</a></li>-->
-<!--			<li><a href="date-picker.html">Date picker</a></li>-->
-<!--			<li><a href="description-list.html">Description list</a></li>-->
-<!--			<li><a href="drop-zone.html">Drop zone</a></li>-->
-<!--			<li><a href="empty-state.html">Empty state</a></li>-->
-<!--			<li><a href="exception-list.html">Exception list</a></li>-->
-<!--			<li><a href="filter.html">Filter</a></li>-->
-<!--			<li><a href="footer-help.html">Footer help</a></li>-->
-<!--			<li><a href="form-layout.html">Form layout</a></li>-->
-<!--			<li><a href="index-table.html">Index table</a></li>-->
-<!--			<li><a href="inline-error.html">Inline error</a></li>-->
-			<li><a href="link.html">Link</a></li>
-<!--			<li><a href="list.html">List</a></li>-->
-<!--			<li><a href="lockups.html">Lockups</a></li>-->
-<!--			<li><a href="media-card.html">Media card</a></li>-->
-<!--			<li><a href="messaging.html">Messaging</a></li>-->
-<!--			<li><a href="modal.html">Modal</a></li>-->
-<!--			<li><a href="navigation.html">Navigation</a></li>-->
-<!--			<li><a href="option-list.html">Option list</a></li>-->
-<!--			<li><a href="page.html">Page</a></li>-->
-<!--			<li><a href="page-actions.html">Page actions</a></li>-->
-<!--			<li><a href="pagination.html">Pagination</a></li>-->
-<!--			<li><a href="popover.html">Popover</a></li>-->
-<!--			<li><a href="progress-bar.html">Progress bar</a></li>-->
-			<li><a href="radio-button.html">Radio button</a></li>
-<!--			<li><a href="range-slider.html">Range slider</a></li>-->
-<!--			<li><a href="resource-list.html">Resource list</a></li>-->
-<!--			<li><a href="result.html">Result</a></li>-->
-<!--			<li><a href="save-bar.html">Save bar</a></li>-->
-<!--			<li><a href="search.html">Search</a></li>-->
-<!--			<li><a href="segemented-input.html">Segmented input</a></li>-->
-			<li><a href="select.html">Select</a></li>
-<!--			<li><a href="setting-toggle.html">Setting toggle</a></li>-->
-<!--			<li><a href="sheet.html">Sheet</a></li>-->
-<!--			<li><a href="skeleton.html">Skeleton</a></li>-->
-			<li><a href="spinner.html">Spinner</a></li>
-			<li><a href="switch.html">Switch</a></li>
-<!--			<li><a href="tabs.html">Tabs</a></li>-->
-			<li><a href="tag.html">Tag</a></li>
-			<li><a href="text-field.html">Text field</a></li>
-			<li><a href="thumbnail.html">Thumbnail</a></li>
-<!--			<li><a href="toast.html">Toast</a></li>-->
-<!--			<li><a href="toggle.html">Toggle</a></li>-->
-<!--			<li><a href="tooltip.html">Tooltip</a></li>-->
-<!--			<li><a href="video-thumbnail.html">Video thumbnail</a></li>-->
+		<ul class="nav-items">
+			<li class="action-list"><a href="action-list.html">Action list</a></li>
+			<li class="autocomplete"><a href="autocomplete.html">Autocomplete</a></li>
+			<li class="avatar"><a href="avatar.html">Avatar</a></li>
+			<li class="badge"><a href="badge.html">Badge</a></li>
+			<li class="banner"><a href="banner.html">Banner</a></li>
+			<li class="button"><a href="button.html" class="active">Button</a></li>
+			<li class="button-group"><a href="button-group.html">Button group</a></li>
+			<li class="callout-card"><a href="callout-card.html">Callout card</a></li>
+			<li class="card"><a href="card.html">Card</a></li>
+			<li class="checkbox"><a href="checkbox.html">Checkbox</a></li>
+			<li class="choice-list"><a href="choice-list.html">Choice list</a></li>
+			<li class="data-table"><a href="data-table.html">Data table</a></li>
+			<li class="date-picker"><a href="date-picker.html">Date picker</a></li>
+			<li class="description-list"><a href="description-list.html">Description list</a></li>
+			<li class="drop-zone"><a href="drop-zone.html">Drop zone</a></li>
+			<li class="empty-state"><a href="empty-state.html">Empty state</a></li>
+			<li class="exception-list"><a href="exception-list.html">Exception list</a></li>
+			<li class="filter"><a href="filter.html">Filter</a></li>
+			<li class="footer-help"><a href="footer-help.html">Footer help</a></li>
+			<li class="form-layout"><a href="form-layout.html">Form layout</a></li>
+			<li class="index-table"><a href="index-table.html">Index table</a></li>
+			<li class="inline-error"><a href="inline-error.html">Inline error</a></li>
+			<li class="link"><a href="link.html">Link</a></li>
+			<li class="list"><a href="list.html">List</a></li>
+			<li class="lockups"><a href="lockups.html">Lockups</a></li>
+			<li class="media-card"><a href="media-card.html">Media card</a></li>
+			<li class="messaging"><a href="messaging.html">Messaging</a></li>
+			<li class="modal"><a href="modal.html">Modal</a></li>
+			<li class="navigation"><a href="navigation.html">Navigation</a></li>
+			<li class="option-list"><a href="option-list.html">Option list</a></li>
+			<li class="page"><a href="page.html">Page</a></li>
+			<li class="page-actions"><a href="page-actions.html">Page actions</a></li>
+			<li class="pagination"><a href="pagination.html">Pagination</a></li>
+			<li class="popover"><a href="popover.html">Popover</a></li>
+			<li class="progress-bar"><a href="progress-bar.html">Progress bar</a></li>
+			<li class="radio-button"><a href="radio-button.html">Radio button</a></li>
+			<li class="range-slider"><a href="range-slider.html">Range slider</a></li>
+			<li class="resource-list"><a href="resource-list.html">Resource list</a></li>
+			<li class="result"><a href="result.html">Result</a></li>
+			<li class="save-bar"><a href="save-bar.html">Save bar</a></li>
+			<li class="search"><a href="search.html">Search</a></li>
+			<li class="segmented-input"><a href="segmented-input.html">Segmented input</a></li>
+			<li class="select"><a href="select.html">Select</a></li>
+			<li class="setting-toggle"><a href="setting-toggle.html">Setting toggle</a></li>
+			<li class="sheet"><a href="sheet.html">Sheet</a></li>
+			<li class="skeleton"><a href="skeleton.html">Skeleton</a></li>
+			<li class="spinner"><a href="spinner.html">Spinner</a></li>
+			<li class="switch"><a href="switch.html">Switch</a></li>
+			<li class="tabs"><a href="tabs.html">Tabs</a></li>
+			<li class="tag"><a href="tag.html">Tag</a></li>
+			<li class="text-field"><a href="text-field.html">Text field</a></li>
+			<li class="thumbnail"><a href="thumbnail.html">Thumbnail</a></li>
+			<li class="toast"><a href="toast.html">Toast</a></li>
+			<li class="toggle"><a href="toggle.html">Toggle</a></li>
+			<li class="tooltip"><a href="tooltip.html">Tooltip</a></li>
+			<li class="video-thumbnail"><a href="video-thumbnail.html">Video thumbnail</a></li>
 		</ul>
 		
 		<span class="credit">Made by <a href="http://bethany.design/">bethany.design</a></span>
@@ -151,7 +127,7 @@
 			<section class="intro">	
 				<h1>Button</h1>
 				<p>
-					Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “View details”.
+					A Button is used to trigger an action or event.
 				</p>
 			</section>
 
@@ -208,7 +184,8 @@
 			<section>
 				<h2>Destructive</h2>
 				<p>
-					Use when the action will delete merchant data or be otherwise difficult to recover from. Destructive buttons should trigger a confirmation dialog before the action is completed. Be thoughtful about using destructive buttons because they can feel stressful for merchants.
+					Use when the action will delete data or be otherwise difficult to recover from. Destructive buttons should trigger a confirmation dialog before the action is completed. 
+<!--					Be thoughtful about using destructive buttons because they can feel stressful for users.-->
 				</p>
 				<figure>
 					<button class="destructive">Label</button>
@@ -239,7 +216,7 @@
 					Use when a button has been pressed and the associated action is in progress.
 				</p>
 				<figure>
-					<button class="disabled"><img class="spinner" src="assets/spinner.svg" height="16px" width="16px" focusable="false"></button>
+					<button class="disabled"><img class="spinner" src="assets/svgs/spinner.svg" height="16px" width="16px" focusable="false"></button>
 				</figure>
 			</section>
 
@@ -261,8 +238,18 @@
 					Use to indicate that multiple options are available from this control, similar to a <code>select</code> HTML element.
 				</p>
 				<figure>
-					<button class="slim">Label<img src="assets/disclosure-default.svg" height="12px" width="12px" focusable="false"></button>
-					<button class="slim">Label<img src="assets/disclosure-select.svg" height="12px" width="12px"focusable="false"></button>
+					<button class="slim disclosure">
+						Label
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.19156 3.5H2.80844C2.11393 3.5 1.74931 4.32424 2.21649 4.83814L5.40805 8.34885C5.72546 8.698 6.27454 8.698 6.59195 8.34885L9.78351 4.83814C10.2507 4.32424 9.88607 3.5 9.19156 3.5Z" fill="#6C6F75"/>
+						</svg>
+					</button>
+					<button class="slim disclosure">
+						Label
+						<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.88668 5.00001L3.11353 5.00002C2.6821 5.00002 2.4532 4.49028 2.73982 4.16783L5.40218 1.17268C5.72041 0.814672 6.2798 0.814671 6.59803 1.17268L9.26039 4.16783C9.54701 4.49028 9.31811 5.00001 8.88668 5.00001ZM3.11353 7.00001H8.88668C9.31811 7.00001 9.54701 7.50975 9.26039 7.8322L6.59803 10.8273C6.2798 11.1854 5.72041 11.1854 5.40218 10.8273L2.73982 7.8322C2.4532 7.50975 2.6821 7.00001 3.11353 7.00001Z" fill="#6C6F75"/>
+						</svg>
+					</button>
 				</figure>		
 			</section>
 
