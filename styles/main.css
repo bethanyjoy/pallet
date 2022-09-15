@@ -809,7 +809,12 @@ figure p {
 	.credit.mobile {
 		display:block;
 		margin-top: var(--space-16);
-}
+	}
+	
+	.icons .grid {
+/*		grid-template-columns: repeat(auto-fill,minmax(min(8.4rem,100%),1fr));*/
+		grid-gap: var(--space-6) var(--space-6);
+	}
 
 }
 
