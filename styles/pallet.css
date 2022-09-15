@@ -1008,10 +1008,6 @@ label.checkbox input {
 	width: var(--size-3-5);
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align:center;
 }
 
 .checkbox:hover input ~ .checkmark {
@@ -1033,10 +1029,10 @@ label.checkbox input:checked ~ .checkmark svg {
 
 label.checkbox .checkmark svg {
 	fill: var(--white);
-/*	height: var(--size-3);*/
-	padding: 0.0625rem;
-/*	width: var(--size-3);*/
-	margin: auto;
+	height: 0.75rem;
+	margin: 0.0625rem;
+	width: 0.8125rem;
+
 }
 
 
