@@ -41,7 +41,7 @@ body[light-mode=dark] h1 {
 	color: var(--white);
 }
 
-body[light-mode=dark] h2 {
+body[light-mode=dark] h3 {
 	color: var(--white);
 }
 
@@ -109,7 +109,7 @@ p {
 h1 {
 	color: var(--gray-900);
 /*	font-family: var(--font-family-display);*/
-	font-size: 2.125rem;
+	font-size: 2.1rem;
 	letter-spacing: -0.01em;
 	line-height: 120%;
 	margin-bottom: var(--space-4);
@@ -398,7 +398,7 @@ figure {
 
 /*  Properties list  */
 
-.props h2 {
+.props h3 {
 	margin-bottom: var(--space-6);
 }
 
@@ -701,7 +701,7 @@ figure p {
 
 /*
 	html, body, div, span, applet, object, iframe,
-	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	h1, h3, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
 	del, dfn, em, img, ins, kbd, q, s, samp,
 	small, strike, strong, sub, sup, tt, var,
@@ -800,7 +800,7 @@ figure p {
 */
 	
 /*
-	.index section h2 {
+	.index section h3 {
 		font-size: var(--font-size-500);
 	}
 */
