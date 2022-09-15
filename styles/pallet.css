@@ -1039,6 +1039,10 @@ label.checkbox.disabled {
 	pointer-events: none;
 }
 
+label.checkbox.no-click {
+	pointer-events: none;
+}
+
 label.checkbox.disabled .checkmark {
 	background-color: var(--gray-300);
 	border: none;

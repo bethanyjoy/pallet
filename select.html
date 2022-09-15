@@ -132,7 +132,7 @@
 			<section>
 				<h2>Default</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Presents a classic dropdown menu or equivalent picker as determined by users’ browsers.
 				</p>
 				<figure>
 					<div class="select">
@@ -153,7 +153,7 @@
 			<section>
 				<h2>Optional</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use optional indicator to let users know that a selection isn't required.
 				</p>
 				<figure>
 					<div class="select">
@@ -175,7 +175,7 @@
 			<section>
 				<h2>Error</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use to let users know if there’s a problem with their selection. For selects, a selection is typically invalid only when using a placeholder option (“Select”) and no other selection has been made.
 				</p>
 				<figure>
 					<div class="select error">
@@ -202,7 +202,7 @@
 			<section>
 				<h2>Disabled</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use for selections that aren’t currently available. The surrounding interface should make it clear why the select box is disabled and how to activate it.
 				</p>
 				<figure>
 					<div class="select disabled">
@@ -228,18 +228,46 @@
 				<ul>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
-							<span class="prop-type">'a' | 'b' | 'c'</span>
+							<span class="prop-name">label</span>
+							<span class="prop-type">string</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
+						<p>Label for the select</p>
 					</li>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
+							<span class="prop-name">placeholder</span>
+							<span class="prop-type">string</span>
+						</span>
+						<p>Example text to display as placeholder</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">optionalIndicator</span>
 							<span class="prop-type">boolean</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
+						<p>Visual optional indicator, add an 'optional' badge to the label</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">labelHidden</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Visually hide the label</p>
 					</li>	
+					<li>
+						<span class="text-row">
+							<span class="prop-name">disabled</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Disable input</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">error</span>
+							<span class="prop-type">boolean | Error</span>
+						</span>
+						<p>Display an error state</p>
+					</li>
 				</ul>
 
 			</section>

@@ -132,7 +132,7 @@
 			<section>
 				<h2>Default</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use to allow merchants to provide text input when the expected input is short. For longer input, use the multiline option.
 				</p>
 				<figure>
 					<div class="text-field">
@@ -147,7 +147,7 @@
 			<section>
 				<h2>Placeholder</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use to provide a short, non-essential hint about the expected input. Placeholder text is low-contrast, so don’t rely on it for important information.
 				</p>
 				<figure>
 					<div class="text-field">
@@ -162,7 +162,7 @@
 			<section>
 				<h2>Icon</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use for specific controlled usage, for example a search bar.
 				</p>
 				<figure>
 					<div class="text-field icon">
@@ -174,14 +174,14 @@
 			<section>
 				<h2>Multiline</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use when the expected input could be more than one line.
 				</p>
 				<figure>
 					<div class="text-field multiline">
 						<span class="field-label">
 							<label for="example">Label</label>
 						</span>
-						<textarea type="text" id="example" name="example" placeholder="" cols="40" rows="4"></textarea>
+						<textarea type="text" id="example" name="example" placeholder="" cols="40" rows="3"></textarea>
 					</div>
 				</figure>
 			</section>
@@ -189,7 +189,7 @@
 			<section>
 				<h2>Optional</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use optional indicator to let users know that a selection isn't required.
 				</p>
 				<figure>
 					<div class="text-field">
@@ -205,7 +205,7 @@
 			<section>
 				<h2>Error</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Let users know if their input is valid or if there’s an error.
 				</p>
 				<figure>
 					<div class="text-field error">
@@ -226,7 +226,7 @@
 			<section>
 				<h2>Disabled</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use to show that a textfield is not available for interaction.
 				</p>
 				<figure>
 					<div class="text-field disabled">
@@ -248,18 +248,53 @@
 				<ul>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
-							<span class="prop-type">'a' | 'b' | 'c'</span>
+							<span class="prop-name">label</span>
+							<span class="prop-type">string</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
+						<p>Label for the text field</p>
 					</li>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
+							<span class="prop-name">placeholder</span>
+							<span class="prop-type">string</span>
+						</span>
+						<p>Example text to display as placeholder</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">multiline</span>
 							<span class="prop-type">boolean</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
+						<p>Use taller multiline input with resize icon</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">optionalIndicator</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Visual optional indicator, add an 'optional' badge to the label</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">labelHidden</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Visually hide the label</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">disabled</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Disable input</p>
 					</li>	
+					<li>
+						<span class="text-row">
+							<span class="prop-name">error</span>
+							<span class="prop-type">boolean | Error</span>
+						</span>
+						<p>Display an error state</p>
+					</li>
 				</ul>
 
 			</section>

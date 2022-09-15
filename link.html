@@ -132,7 +132,7 @@
 			<section>
 				<h2>Default</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use for text links inside a paragraph or for standalone text. Default links open in the same browser tab.
 				</p>
 				<figure>
 					<a href="#" class="link underline">Link</a>
@@ -142,7 +142,7 @@
 			<section>
 				<h2>Underline hidden</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use when wanting to draw less attention to the link.
 				</p>
 				<figure>
 					<a href="#" class="link">Link</a>
@@ -152,7 +152,7 @@
 			<section>
 				<h2>Plus</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use when wanting to create more visual emphasis on link.
 				</p>
 				<figure>
 					<a href="#" class="link plus">Link</a>
@@ -162,7 +162,7 @@
 			<section>
 				<h2>Monochrome</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use for text links that are the same color as the surrounding text.
 				</p>
 				<figure style="gap:24px">
 					<a href="#" class="link underline monochrome">Link</a>
@@ -174,7 +174,7 @@
 			<section>
 				<h2>Size</h2>
 				<p>
-					Donec id elit non mi porta gravida at eget metus.
+					Use for text links that are paired with size 200 paragraph text.
 				</p>
 				<figure style="gap:24px">
 					<a href="#" class="link underline medium">Link</a>
@@ -191,18 +191,53 @@
 				<ul>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
-							<span class="prop-type">'a' | 'b' | 'c'</span>
+							<span class="prop-name">url</span>
+							<span class="prop-type">string</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
+						<p>The url to link to</p>
 					</li>
 					<li>
 						<span class="text-row">
-							<span class="prop-name">propName</span>
+							<span class="prop-name">text</span>
+							<span class="prop-type">string</span>
+						</span>
+						<p>The text to display inside of the link</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">external</span>
 							<span class="prop-type">boolean</span>
 						</span>
-						<p>Nulla vitae elit libero, a pharetra augue.</p>
-					</li>	
+						<p>Makes the link open in a new tab</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">monochrome</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Makes the link color the same as the current text color</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">removeUnderline</span>
+							<span class="prop-type">boolean</span>
+						</span>
+						<p>Removes text decoration underline to the link</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">weight</span>
+							<span class="prop-type">'normal' | 'medium'</span>
+						</span>
+						<p>Changes the weight of the link text</p>
+					</li>
+					<li>
+						<span class="text-row">
+							<span class="prop-name">size</span>
+							<span class="prop-type">'100' | '200'</span>
+						</span>
+						<p>Changes the weight of the link text</p>
+					</li>
 				</ul>
 
 			</section>
