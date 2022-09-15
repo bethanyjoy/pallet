@@ -457,6 +457,7 @@ div.avatar {
 	background-color: var(--green-300);
 	border-radius: var(--border-radius-circle);
 	display: flex;
+	flex: 0 0 var(--size-10);
 }
 
 div.avatar span {
@@ -487,18 +488,21 @@ div.avatar.medium {
 	font-weight: var(--font-weight-medium);
 	height: var(--size-10);
 	width: var(--size-10);
+	flex: 0 0 var(--size-10);
 }
 
 div.avatar.small {
 	font-size: var(--font-size-100);
 	height: var(--size-8);
 	width: var(--size-8);
+	flex: 0 0 var(--size-8);
 }
 
 div.avatar.xsmall {
 	font-size: var(--font-size-75);
 	height: var(--size-6);
 	width: var(--size-6);
+	flex: 0 0 var(--size-6);
 }
 
 
@@ -1026,7 +1030,7 @@ label.checkbox input:checked ~ .checkmark svg {
 label.checkbox .checkmark svg {
 	fill: var(--white);
 /*	height: var(--size-3);*/
-	padding: var(--space-px);
+	padding: 0.0625rem;
 /*	width: var(--size-3);*/
 }
 
@@ -1582,6 +1586,7 @@ div.thumbnail {
 	border-radius: var(--border-radius-1);
 	display: flex;
 	overflow: hidden;
+	flex: 0 0 var(--size-10);
 }
 
 div.thumbnail img {
@@ -1596,21 +1601,25 @@ div.thumbnail img {
 div.thumbnail.xsmall {
 	height: var(--size-8);
 	width: var(--size-8);
+	flex: 0 0 var(--size-8);
 }
 
 div.thumbnail.small {
 	height: var(--size-10);
 	width: var(--size-10);
+	flex: 0 0 var(--size-10);
 }
 
 div.thumbnail.medium {
 	height: var(--size-16);
 	width: var(--size-16);
+	flex: 0 0 var(--size-16);
 }
 
 div.thumbnail.large {
 	height: var(--size-20);
 	width: var(--size-20);
+	flex: 0 0 var(--size-20);
 }
 
 
