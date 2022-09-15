@@ -14,7 +14,9 @@
 }
 
 
-
+html {
+	font-size: 16px;
+}
 
 
 
@@ -101,20 +103,29 @@ p {
 	color: var(--gray-700);
 	font-size: var(--font-size-200);
 	line-height: var(--font-line-height-200-p);
+	margin: 0;
 }
 
 h1 {
 	color: var(--gray-900);
-	font-family: var(--font-family-display);
-	font-size: var(--font-size-500);
+/*	font-family: var(--font-family-display);*/
+	font-size: 2.125rem;
 	letter-spacing: -0.01em;
-	line-height: var(--font-line-height-500);
-	margin-bottom: var(--space-5);
+	line-height: 120%;
+	margin-bottom: var(--space-4);
 	margin-top: var(--space-0);
 	font-weight: 600;
 }
 
 h2 {
+	color: var(--gray-900);
+	font-size: var(--font-size-500);
+	line-height: var(--font-line-height-500);
+	font-weight: 600;
+	margin-bottom: var(--space-4);
+}
+
+h3 {
 	color: var(--gray-900);
 	font-size: var(--font-size-300);
 	font-weight: var(--font-weight-semibold);
@@ -326,7 +337,8 @@ main {
 }
 
 main article {
-	max-width: 60rem;
+	max-width: 50rem;
+	margin: auto;
 }
 
 section {
@@ -856,12 +868,12 @@ li.shadow, li.shape, li.space {
 
 /* have pages w/ content */
 
-li.avatar, li.badge, li.banner, li.button, li.button-group, li.checkbox, li.inline-error, li.link, li.radio-button, li.select, li.spinner, li.switch, li.text-field, li.thumbnail {
+li.avatar, li.badge, li.banner, li.button, li.button-group, li.checkbox, li.inline-error, li.radio-button, li.select, li.spinner, li.switch, li.text-field, li.thumbnail {
 	display: block;
 }
 
 /* have pages w/ content */
-li.segmented-input, li.tag {
+li.link, li.segmented-input, li.tag {
 	display: none;
 }
 
