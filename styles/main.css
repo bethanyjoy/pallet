@@ -871,8 +871,8 @@ figure p {
 	}
 
   .grid {
-  	gap: var(--space-6);
-  	grid-gap: var(--space-6);
+  	gap: var(--space-5);
+  	grid-gap: var(--space-5);
   	grid-template-columns: repeat(auto-fill,minmax(min(7rem,100%),1fr));
   }
 
