@@ -495,7 +495,7 @@ section.index-intro {
 	display: grid;
 	gap: var(--space-8);
 	grid-gap: var(--space-12) var(--space-8);
-	grid-template-columns: repeat(auto-fill,minmax(min(5rem,100%),1fr));
+	grid-template-columns: repeat(auto-fill,minmax(min(12rem,100%),1fr));
 	margin-top: var(--space-8);
 }
 
@@ -870,7 +870,13 @@ figure p {
 		margin-top: var(--space-16);
 	}
 
-	.icons .grid {
+  .grid {
+  	gap: var(--space-7);
+  	grid-gap: var(--space-7);
+  	grid-template-columns: repeat(auto-fill,minmax(min(7rem,100%),1fr));
+  }
+
+  .icons .grid {
 		grid-template-columns: repeat(auto-fill,minmax(min(7.4rem,100%),1fr));
 		grid-gap: var(--space-5) var(--space-5);
 	}
