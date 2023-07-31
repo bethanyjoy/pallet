@@ -125,7 +125,8 @@ code {
 	font-family: var(--font-family-mono);
 	padding: var(--space-0-5) var(--space-1);
 	color: var(--gray-700);
-	font-size: 0.98em;
+	font-size: 0.92em;
+  font-weight: var(--font-weight-regular);
 }
 
 
@@ -397,7 +398,7 @@ figure {
 	font-family: var(--font-family-mono);
 	margin: var(--space-0);
 	line-height: 1.5em;
-	font-size: 0.85rem;
+	font-size: 0.86rem;
 }
 
 .props p {
@@ -620,10 +621,11 @@ img.hover {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-2);
+  align-items: flex-start;
 }
 
 .grid.swatches .text code {
-	width: 4.5rem;
+	/* width: 4.5rem; */
 }
 
 
