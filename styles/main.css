@@ -826,6 +826,11 @@ figure p {
 		grid-gap: var(--space-5) var(--space-5);
 	}
 
+
+  .index .grid span {
+    padding: var(--space-3);
+  }
+
 }
 
 
