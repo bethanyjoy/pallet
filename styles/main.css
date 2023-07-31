@@ -37,6 +37,15 @@
 	--font-family-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	--font-family-display: "Messina Sans", 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+  --color-border-shadow: rgba(67,90,111,.2);
+  --color-blurry-shadow: rgba(67,90,111,.3);
+  --elevation-0: 0 0 1px var(--color-border-shadow);
+  --elevation-1: 0 0 1px var(--color-border-shadow),0 2px 4px -2px var(--color-blurry-shadow);
+  --elevation-2: 0 0 1px var(--color-border-shadow),0 5px 8px -4px var(--color-blurry-shadow);
+  --elevation-3: 0 0 1px var(--color-border-shadow),0 8px 10px -4px var(--color-blurry-shadow);
+  --elevation-4: 0 0 1px var(--color-border-shadow),0 16px 24px -8px var(--color-blurry-shadow);
+  --elevation-5: 0 0 1px var(--color-border-shadow),0 2px 4px -2px var(--color-blurry-shadow);
+
 }
 
 
@@ -220,6 +229,9 @@ nav {
 	top: var(--space-0);
 	width: 15rem;
 	background-color: var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 	/* background-color: rgb(248, 249, 251); */
 	/* background-color: rgba(239, 243, 255,0.4); */
 }
@@ -235,12 +247,13 @@ nav {
 	font-family: var(--font-family-display);
 	font-size: var(--font-size-500);
 	gap: var(--space-2-5);
-	height: var(--font-line-height-500);
+	/* height: var(--font-line-height-500); */
 	letter-spacing: -0.025em;
 	line-height: var(--font-line-height-500);
-	margin-bottom: var(--space-9);
+	/* margin-bottom: var(--space-9); */
 	text-decoration: none;
 	width: var(--size-24);
+  padding-bottom: 0.6rem;
 }
 
 .logo:hover {
@@ -267,27 +280,39 @@ nav {
 
 /*  Navigation  */
 
-nav ul {
+nav > div {
 	margin: var(--space-0) -0.8rem;
+	display: flex;
+  gap: var(--space-px);
+  flex-direction: column;
+}
+
+nav > div a, nav > div span {
+  padding: 0.7rem 0.8rem;
+}
+
+nav > div span {
+	color: var(--gray-800);
 	display: block;
+	font-size: var(--font-size-100);
+	font-weight: 600;
 }
 
-nav li {
+/* nav li {
 	margin-bottom: var(--space-px);
-}
+} */
 
-nav li a {
+nav > div a {
 	/* border-radius: var(--border-radius-1); */
 	color: var(--gray-700);
 	display: block;
 	font-size: var(--font-size-100);
 	line-height: var(--space-4);
-	padding: 0.6rem 0.8rem;
 	text-decoration: none;
 	width: auto;
 }
 
-nav li a:hover, nav li a.active {
+nav > div a:hover, nav > div a.active {
 	/* background-color: rgba(185, 199, 240, 0.16); */
 	background-color: rgba(212, 218, 237, 0.3);
 	/* background-color: var(--gray-300); */
@@ -585,12 +610,17 @@ section.index-intro {
 	width: 100%;
 	border-radius: var(--border-radius-2);
 	border: solid 0.5px var(--white);
+  transition: all .12s;
+  top: 0;
 }
 
 .grid a:hover {
 	text-decoration: none;
 	border-color: var(--gray-300);
-	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09);
+	/* box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09); */
+  box-shadow: var(--elevation-1);
+  top: -2px;
+
 }
 
 .grid img {
@@ -602,14 +632,19 @@ section.index-intro {
   	filter: grayscale(100%);
 */
 /*	opacity: 60%;*/
+  transition: all 1s;
 }
 
-img.dark {
+/* img.dark {
 	display: none;
-}
+} */
 
 img.hover {
-	display: none
+  opacity: 0;
+	transition: opacity ease 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .index .grid div {
@@ -624,6 +659,7 @@ img.hover {
 
 .index .grid span {
 	padding: var(--space-4);
+  display: block;
 }
 /*
 
@@ -634,25 +670,15 @@ img.hover {
 }
 */
 
-.grid a:hover img.initial {
+/* .grid a:hover img.initial {
 	display: none;
-}
+} */
 
 .grid a:hover img.hover {
 	display: inline-block;
-		opacity: 100%;
+	opacity: 100%;
 }
 
-
-.ul-header {
-	color: var(--gray-600);
-	display: block;
-	font-size: var(--font-size-50);
-	font-weight: var(--font-weight-semibold);
-	letter-spacing: 0.075em;
-	margin: var(--space-7) var(--space-0) var(--space-2) var(--space-0);
-	text-transform: uppercase;
-}
 
 .all {
 	margin-top: var(--space-10);
@@ -862,8 +888,13 @@ figure p {
 
 	.grid a {
 		border-color: var(--gray-300);
-		box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09);
+		/* box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09); */
+    box-shadow: var(--elevation-1);
 	}
+
+  .grid a:hover {
+    top: 0;
+  }
 
 	.credit.mobile {
 		display:block;
@@ -899,36 +930,40 @@ figure p {
 
 /* have pages */
 
-li.color, li.icons, li.typography {
+a.color, a.icons, a.typography {
 	display: block;
 }
 
 /* have thumbnails */
 
-li.shadow, li.shape, li.space {
+a.shadow, a.shape, a.space {
 	display: none;
 }
 
 
 /* have pages w/ content */
 
-li.avatar, li.badge, li.banner, li.button, li.button-group, li.checkbox, li.inline-error, li.radio-button, li.select, li.spinner, li.switch, li.text-field, li.thumbnail {
+a.avatar, a.badge, a.banner, a.button, a.button-group, a.checkbox, a.inline-error, a.radio-button, a.select, a.spinner, a.switch, a.text-field, a.thumbnail {
 	display: block;
 }
 
 /* have pages w/ content */
-li.link, li.segmented-input, li.tag {
+a.link, a.segmented-input, a.tag {
 	display: none;
 }
 
 /* have thumbnails */
 
-li.action-list, li.autocomplete, li.choice-list, li.date-picker, li.drop-zone, li.modal, li.option-list, li.tabs, li.tooltip {
+a.action-list, a.autocomplete, a.choice-list, a.date-picker, a.drop-zone, a.modal, a.option-list, a.tabs, a.tooltip {
 	display: none;
 }
 
 /* remaining component pages */
 
-li.callout-card, li.card, li.data-table, li.description-list, li.empty-state, li.exception-list, li.filter, li.footer-help, li.form-layout, li.index-table, li.list, li.lockups, li.media-card, li.messaging, li.navigation, li.page, li.page-actions, li.pagination, li.popover, li.progress-bar, li.range-slider, li.resource-list, li.result, li.save-bar, li.search, li.setting-toggle, li.sheet, li.skeleton, li.toast, li.toggle, li.video-thumbnail {
+a.callout-card, a.card, a.data-table, a.description-list, a.empty-state, a.exception-list, a.filter, a.footer-help, a.form-layout, a.index-table, a.list, a.lockups, a.media-card, a.messaging, a.navigation, a.page, a.page-actions, a.pagination, a.popover {
+  display: none;
+}
+
+a.progress-bar, a.range-slider, a.resource-list, a.result, a.save-bar, a.search, a.setting-toggle, a.sheet, a.skeleton, a.toast, a.toggle, a.video-thumbnail {
 	display: none;
 }
