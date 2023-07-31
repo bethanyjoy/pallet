@@ -3,45 +3,39 @@
 <html lang="en">
 
 <head>
-	
+
 	<meta charset="utf-8">
-	
+
 	<title>Button ― Pallet Design System</title>
-	
+
 	<meta name="description" content="Components and styles used to design Lumi interfaces">
 	<meta name="author" content="Bethany Nuechterlein">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-	<link href="../styles/normalize.css" rel="stylesheet"> 	
+
+	<link href="../styles/normalize.css" rel="stylesheet">
 	<link href="../styles/pallet.css" rel="stylesheet">
 	<link href="../styles/main.css" rel="stylesheet">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-	
+
 	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png">
-	
+
 </head>
 
 <body>
 
 	<nav class="sidebar">
-		
+
 		<a class="logo" href="../index.html">
-			Pallet
 			<img src="../assets/logo.png">
+			pallet
 		</a>
-		
-		<span class="tagline">Components and styles used to design Lumi interfaces</span>
-		
-		<a href="https://www.figma.com/file/B1SvADcCG4a8LbE224mcjT/Pallet-Design-System?node-id=807%3A284811" target="_blank" data-external-link-arrow="true" class="external-link">
-			Figma file
-		</a>
-		
+
 		<span class="ul-header">Foundations</span>
 		<ul class="nav-items">
 			<li class="color"><a href="../foundations/color.html">Color</a></li>
@@ -51,7 +45,7 @@
 			<li class="space"><a href="../foundations/space.html">Space</a></li>
 			<li class="typography"><a href="../foundations/typography.html">Typography</a></li>
 		</ul>
-		
+
 		<span class="ul-header">Components</span>
 		<ul class="nav-items">
 			<li class="action-list"><a href="../components/action-list.html">Action list</a></li>
@@ -111,28 +105,28 @@
 			<li class="tooltip"><a href="../components/tooltip.html">Tooltip</a></li>
 			<li class="video-thumbnail"><a href="../components/video-thumbnail.html">Video thumbnail</a></li>
 		</ul>
-		
-		<span class="credit">Made by <a href="http://bethany.design/">bethany.design</a></span>
+
+		<!-- <span class="credit">Made by <a href="http://bethany.design/">bethany.design</a></span> -->
 
 	</nav>
-	
+
 	<main class="main">
-		
+
 		<header>
 			<a href="../index.html" class="back-arrow" data-back-arrow="true">Index</a>
 		</header>
-		
+
 		<article>
-		
-			<section class="intro">	
+
+			<section class="intro">
 				<h1>Button</h1>
 				<p>
 					A Button is used to trigger an action or event.
 				</p>
 			</section>
-			
+
 <!--
-			<section>	
+			<section>
 				<h3>Types</h3>
 			</section>
 -->
@@ -166,7 +160,7 @@
 -->
 				<figure>
 					<button class="minimal">Label</button>
-				</figure>		
+				</figure>
 			</section>
 
 			<section>
@@ -188,7 +182,7 @@
 					<button class="plain">Label</button>
 				</figure>
 			</section>
-			
+
 			<section>
 				<h3>Button Sizes</h3>
 				<p>
@@ -198,11 +192,11 @@
 					<button class="slim">Label</button>
 					<button>Label</button>
 					<button class="large">Label</button>
-				</figure>		
+				</figure>
 			</section>
-			
+
 <!--
-			<section>	
+			<section>
 				<h3>States</h3>
 			</section>
 -->
@@ -218,7 +212,7 @@
 					<button class="minimal disabled">Label</button>
 					<button class="outline disabled">Label</button>
 					<button class="plain disabled">Label</button>
-				</figure>		
+				</figure>
 			</section>
 
 			<section>
@@ -231,9 +225,9 @@
 				</figure>
 			</section>
 
-			
+
 <!--
-			<section>	
+			<section>
 				<h3>Icon buttons</h3>
 			</section>
 -->
@@ -275,7 +269,7 @@
 					</button>
 				</figure>
 			</section>
-			
+
 			<section>
 				<h3>Disclosure Button</h3>
 				<p>
@@ -294,13 +288,13 @@
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.88668 5.00001L3.11353 5.00002C2.6821 5.00002 2.4532 4.49028 2.73982 4.16783L5.40218 1.17268C5.72041 0.814672 6.2798 0.814671 6.59803 1.17268L9.26039 4.16783C9.54701 4.49028 9.31811 5.00001 8.88668 5.00001ZM3.11353 7.00001H8.88668C9.31811 7.00001 9.54701 7.50975 9.26039 7.8322L6.59803 10.8273C6.2798 11.1854 5.72041 11.1854 5.40218 10.8273L2.73982 7.8322C2.4532 7.50975 2.6821 7.00001 3.11353 7.00001Z" fill="#6C6F75"/>
 						</svg>
 					</button>
-				</figure>		
+				</figure>
 			</section>
-			
+
 			<section>
 				<h3>Destructive</h3>
 				<p>
-					Use when the action will delete data or be otherwise difficult to recover from. Destructive buttons should trigger a confirmation dialog before the action is completed. 
+					Use when the action will delete data or be otherwise difficult to recover from. Destructive buttons should trigger a confirmation dialog before the action is completed.
 <!--					Be thoughtful about using destructive buttons because they can feel stressful for users.-->
 				</p>
 				<figure>
@@ -422,17 +416,17 @@
 							<span class="prop-type">string</span>
 						</span>
 						<p>Visually hidden text for screen readers</p>
-					</li>	
+					</li>
 				</ul>
 
 			</section>
 
 		</article>
-	
+
 	</main>
-	
+
 	<script>
-		
+
 //		Triggers change in color mode when button is clicked
 		function toggle_light_mode() {
 			var app = document.getElementsByTagName("BODY")[0];
@@ -442,9 +436,9 @@
 			} else {
 			localStorage.lightMode = "dark";
 			app.setAttribute("light-mode", "dark");
-			}		
+			}
 		}
-		
+
 	</script>
 
 </body>
