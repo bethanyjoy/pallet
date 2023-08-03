@@ -236,6 +236,7 @@ nav > div a:hover, nav > div a.active {
 	/* background-color: var(--gray-300); */
 	color: var(--gray-900);
 	text-decoration: none;
+  /* transition: background-color 0.1s, color 0.1s; */
 }
 
 
@@ -525,7 +526,7 @@ section.index-intro {
 	width: 100%;
 	border-radius: var(--border-radius-2);
 	border: solid 0.5px var(--white);
-  transition: all .12s;
+  transition: all 0.3s;
   top: 0;
 }
 
