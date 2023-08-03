@@ -322,12 +322,13 @@ nav {
 
   .nav-section a, .nav-section span {
     padding: 0.8rem 0.8rem;
-    margin-right: 5rem;
+    margin-right: 4rem;
   }
 
   #nav-sections {
     margin-bottom: 6rem;
   }
+
 }
 
 @media only screen and (min-width: 800px) {
