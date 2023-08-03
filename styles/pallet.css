@@ -200,7 +200,7 @@ html {
 :focus {
 /*  outline-width: 6px;*/
 /*  outline-style: dashed;*/
-  outline-color: var(--blue-600);
+	outline-color: var(--blue-600);
 }
 
 
