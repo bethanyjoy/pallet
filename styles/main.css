@@ -155,6 +155,13 @@ nav {
 	/* background-color: rgba(239, 243, 255,0.4); */
 }
 
+#nav-sections {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 
 /*  Logo  */
 
@@ -164,8 +171,8 @@ nav {
 	display: flex;
 	flex-direction: row;
 	font-family: var(--font-family-display);
-	font-size: var(--font-size-500);
-	gap: var(--space-2-5);
+	font-size: 1.6rem;
+	gap: 0.5rem;
 	letter-spacing: -0.025em;
 	line-height: var(--font-line-height-500);
 	text-decoration: none;
@@ -181,9 +188,71 @@ nav {
 
 .logo img {
 	fill: var(--blue-500);
-	height: var(--space-6);
-	width: var(--space-6);
+	height: 1.6rem;
+	width: 1.6rem;
 }
+
+.logo svg {
+  color: var(--blue-500);
+	height: 1.6rem;
+	width: 1.6rem;
+}
+
+.logo svg rect {
+
+  fill: var(--blue-600);
+  opacity: 40%;
+}
+
+
+
+
+.mobileButtons {
+	position: fixed;
+	right: var(--space-2);
+}
+
+.mobileButtons a {
+	display: block;
+	/* height: 2.25rem; */
+	padding: 0.15rem 0.75rem;
+  color: var(--gray-800);
+}
+
+.mobileButtons svg{
+	height: 2rem;
+	width: 2rem;
+}
+
+/* Hide "hide" button initially */
+#hideButton {
+	display: none;
+}
+
+/* Hide mobile buttons & results button on desktop */
+@media only screen and (min-width: 800px) {
+	.mobileButtons {
+	  display: none;
+	}
+  .resultsButton {
+    display: none;
+  }
+  main {
+    visibility: visible !important;
+  }
+}
+
+/* Show mobile buttons & results button on mobile */
+@media only screen and (max-width: 800px) {
+	.mobileButtons, .resultsButton {
+	  display: block;
+	}
+}
+
+
+
+
+
 
 
 /*  Tagline  */
@@ -198,18 +267,18 @@ nav {
 
 /*  Navigation  */
 
-nav > div {
+.nav-section {
 	margin: var(--space-0) -0.8rem;
 	display: flex;
   gap: var(--space-px);
   flex-direction: column;
 }
 
-nav > div a, nav > div span {
+.nav-section a, .nav-section span {
   padding: 0.7rem 0.8rem;
 }
 
-nav > div span {
+.nav-section span {
 	color: var(--gray-800);
 	display: block;
 	font-size: var(--font-size-100);
@@ -220,7 +289,7 @@ nav > div span {
 	margin-bottom: var(--space-px);
 } */
 
-nav > div a {
+.nav-section a {
 	/* border-radius: var(--border-radius-1); */
 	color: var(--gray-700);
 	display: block;
@@ -230,7 +299,7 @@ nav > div a {
 	width: auto;
 }
 
-nav > div a:hover, nav > div a.active {
+.nav-section a:hover, .nav-section a.active {
 	/* background-color: rgba(185, 199, 240, 0.16); */
 	background-color: rgba(212, 218, 237, 0.3);
 	/* background-color: var(--gray-300); */
@@ -238,6 +307,42 @@ nav > div a:hover, nav > div a.active {
 	text-decoration: none;
   /* transition: background-color 0.1s, color 0.1s; */
 }
+
+
+@media only screen and (max-width: 800px) {
+
+  .nav-section span {
+  	font-size: var(--font-size-200);
+  }
+
+  .nav-section a {
+  	font-size: var(--font-size-200);
+  	line-height: var(--space-5);
+  }
+
+  .nav-section a, .nav-section span {
+    padding: 0.9rem 0.8rem;
+  }
+
+  #nav-sections {
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+  #nav-sections {
+    display: flex !important;
+  }
+  #sidebar {
+    height: 100vh !important;
+  }
+}
+
+
+
+
+
 
 
 /*  Credit  */
@@ -675,7 +780,35 @@ figure p {
 
 
 
+@media only screen and (max-width: 800px) {
+	.nav-wrapper {
+		display: flex;
+		gap: var(--space-2);
+    align-items: center;
+	}
 
+  /* .searchWrapper h3 {
+    display: none;
+  } */
+  #nav-sections {
+    display: none;
+    gap: 1.5rem;
+  }
+  nav {
+    height: auto;
+    padding: var(--space-5) var(--space-6);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    gap: 2rem;
+    /* box-shadow: 0 2px 8px -2px rgba(67,90,111,.2); */
+    /* border-bottom: 1px solid rgba(0,0,0,0.05); */
+    /* background-color: var(--gray-800); */
+  }
+  .logo {
+    padding: 0;
+  }
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -699,7 +832,7 @@ figure p {
 */
 
 	html {
-		font-size: 19px;
+		font-size: 18px;
 	}
 
 /*
@@ -708,28 +841,23 @@ figure p {
 	}
 */
 
-	nav {
+	/* nav {
 		display: none;
-/*
-		position:fixed;
-		background-color:var(--white);
-		z-index:1000;
-*/
-	}
+	} */
 
 	header {
 		display: block;
 	}
 
-	.logo {
+	/* .logo {
 		font-size: 1.75rem;
-	}
+	} */
 
 	a.back-arrow {
 		font-size: var(--font-size-300);
 	}
 
-	.logo img {
+	.logo svg {
 		height: var(--space-7);
 		width: var(--space-7);
 	}
@@ -831,7 +959,7 @@ figure p {
 
 
   .index .grid span {
-    padding: var(--space-3);
+    padding: var(--space-2-5) var(--space-3);
   }
 
 }
