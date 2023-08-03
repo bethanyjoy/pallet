@@ -29,14 +29,35 @@
 
 <body>
 
-	<nav class="sidebar">
+	<nav class="sidebar" id="sidebar">
 
-		<a class="logo" href="../index.html">
-			<img src="../assets/logo.png">
-			pallet
-		</a>
+		<div class="nav-wrapper">
+			<a class="logo" href="index.html">
+				<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect y="39" width="96" height="18" rx="5" fill="currentColor"/>
+					<rect x="57" width="96" height="18" rx="5" transform="rotate(90 57 0)" fill="currentColor"/>
+					<rect x="7.69482" y="75.5771" width="96" height="18" rx="5" transform="rotate(-45 7.69482 75.5771)" fill="currentColor"/>
+					<rect x="20.4229" y="7.69482" width="96" height="18" rx="5" transform="rotate(45 20.4229 7.69482)" fill="currentColor"/>
+				</svg>
+				pallet
+			</a>
+			<div class="mobileButtons">
+				<a href="javascript:void(0);" class="navButton" id="showButton" onclick="showSidebar()">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</a>
+				<a href="javascript:void(0);" class="navButton" id="hideButton" onclick="hideSidebar()">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</a>
+      		</div>
+		</div>
 
-		<div>
+		<div id="nav-sections">
+
+			<div class="nav-section">
 			<span>Foundations</span>
 			<a class="color" href="../foundations/color.html">Color</a>
 			<a class="icons" href="../foundations/icons.html">Icons</a>
@@ -46,8 +67,8 @@
 			<a class="typography" href="../foundations/typography.html">Typography</a>
 		</div>
 
-		<div>
-			<span>Components</span>
+		<div class="nav-section">
+				<span>Components</span>
 			<a class="action-list active" href="../components/action-list.html">Action list</a>
 			<a class="autocomplete" href="../components/autocomplete.html">Autocomplete</a>
 			<a class="avatar" href="../components/avatar.html">Avatar</a>
@@ -104,9 +125,12 @@
 			<a class="toggle" href="../components/toggle.html">Toggle</a>
 			<a class="tooltip" href="../components/tooltip.html">Tooltip</a>
 			<a class="video-thumbnail" href="../components/video-thumbnail.html">Video thumbnail</a>
+			</div>
+
 		</div>
 
 	</nav>
+
 
 
 
@@ -161,6 +185,52 @@
 		</article>
 
 	</main>
+
+	<script>
+
+			// Hide/show sidebar on mobile
+
+	   function showSidebar() {
+	     var x = document.getElementById("nav-sections");
+	       x.style.display = "flex";
+	     var x = document.getElementById("showButton");
+	       x.style.display = "none";
+	     var x = document.getElementById("hideButton");
+	       x.style.display = "block";
+	     var x = document.getElementById("sidebar");
+	       x.style.height = "100vh";
+	     var x = document.getElementById("main");
+	        // x.style.position = 'fixed';
+	        // x.style.top = `-${window.scrollY}px`;
+
+	       x.style.display = "none"
+	       // x.style.height = "0"
+	       // x.style.overflow = "hidden"
+	       // x.style.display = "hidden"
+	   }
+
+
+	   function hideSidebar() {
+	     var x = document.getElementById("nav-sections");
+	       x.style.display = "none";
+	     var x = document.getElementById("showButton");
+	       x.style.display = "block";
+	     var x = document.getElementById("hideButton");
+	       x.style.display = "none";
+	       var x = document.getElementById("sidebar");
+	         x.style.height = "auto";
+	     var x = document.getElementById("main");
+	        // const scrollY = x.style.top;
+	        // x.style.position = '';
+	        // x.style.top = '';
+	        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+	         x.style.display = "block"
+	         // x.style.height = "auto"
+	         // x.style.overflow = "auto"
+	     }
+
+	  </script>
 
 </body>
 
