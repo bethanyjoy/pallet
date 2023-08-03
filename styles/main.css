@@ -322,12 +322,12 @@ nav {
 
   .nav-section a, .nav-section span {
     padding: 0.9rem 0.8rem;
+    margin-right: 5rem;
   }
 
   #nav-sections {
-    margin-bottom: 6rem !important;
+    margin-bottom: 6rem;
   }
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -337,6 +337,15 @@ nav {
   #sidebar {
     height: 100vh !important;
   }
+}
+
+
+@media only screen and (max-width: 800px) and (pointer:fine) {
+
+  #nav-sections {
+    margin-bottom: 2rem;
+  }
+
 }
 
 
@@ -870,7 +879,7 @@ figure p {
 */
 
 	main {
-		padding: var(--space-12) var(--space-6);
+		padding: var(--space-12) var(--space-6) 4rem;
 	}
 
 /*
