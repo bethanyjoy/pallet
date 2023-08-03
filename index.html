@@ -141,23 +141,6 @@
 
 	<main class="main">
 
-		<header>
-
-			<!-- <a class="logo" href="index.html">
-				<img src="assets/logo.png">
-				pallet
-			</a> -->
-
-			<!-- <span class="tagline">
-				Components and styles used to design Lumi interfaces
-			</span>
-
-			<a href="https://www.figma.com/file/B1SvADcCG4a8LbE224mcjT/Pallet-Design-System?node-id=807%3A284811" target="_blank" data-external-link-arrow="true" class="external-link">
-				Figma file
-			</a> -->
-
-		</header>
-
 		<article>
 
 
@@ -685,68 +668,7 @@
 
 	</main>
 
-<!--
-	<script>
-
-		let sidebar = document.querySelector(".sidebar");
-
-		let top = sessionStorage.getItem("sidebar-scroll");
-		if (top !== null) {
-		  sidebar.scrollTop = parseInt(top, 10);
-		}
-
-		window.addEventListener("beforeunload", () => {
-		  sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
-		});
-
-	</script>
--->
-
-<script>
-
-		// Hide/show sidebar on mobile
-
-   function showSidebar() {
-     var x = document.getElementById("nav-sections");
-       x.style.display = "flex";
-     var x = document.getElementById("showButton");
-       x.style.display = "none";
-     var x = document.getElementById("hideButton");
-       x.style.display = "block";
-     var x = document.getElementById("sidebar");
-       x.style.height = "100vh";
-     var x = document.getElementById("main");
-        // x.style.position = 'fixed';
-        // x.style.top = `-${window.scrollY}px`;
-
-       x.style.display = "none"
-       // x.style.height = "0"
-       // x.style.overflow = "hidden"
-       // x.style.display = "hidden"
-   }
-
-
-   function hideSidebar() {
-     var x = document.getElementById("nav-sections");
-       x.style.display = "none";
-     var x = document.getElementById("showButton");
-       x.style.display = "block";
-     var x = document.getElementById("hideButton");
-       x.style.display = "none";
-       var x = document.getElementById("sidebar");
-         x.style.height = "auto";
-     var x = document.getElementById("main");
-        // const scrollY = x.style.top;
-        // x.style.position = '';
-        // x.style.top = '';
-        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
-         x.style.display = "block"
-         // x.style.height = "auto"
-         // x.style.overflow = "auto"
-     }
-
-  </script>
+  <script src="script.js"></script>
 
 </body>
 

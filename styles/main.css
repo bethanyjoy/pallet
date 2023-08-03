@@ -811,9 +811,10 @@ figure p {
     width: 100%;
     z-index: 100;
     gap: 2rem;
+/*    backdrop-filter: blur(20px);*/
     /* box-shadow: 0 2px 8px -2px rgba(67,90,111,.2); */
-    /* border-bottom: 1px solid rgba(0,0,0,0.05); */
-    /* background-color: var(--gray-800); */
+     border-bottom: 1px solid var(--gray-400); 
+/*     background-color: rgba(241, 241, 245, 0.5); */
   }
   .logo {
     padding: 0;
@@ -880,7 +881,7 @@ figure p {
 */
 
 	main {
-		padding: var(--space-12) var(--space-6) 4rem;
+		padding: 7rem var(--space-6) 4rem;
 	}
 
 /*

@@ -32,7 +32,7 @@
 	<nav class="sidebar" id="sidebar">
 
 		<div class="nav-wrapper">
-			<a class="logo" href="index.html">
+			<a class="logo" href="../index.html">
 				<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect y="39" width="96" height="18" rx="5" fill="currentColor"/>
 					<rect x="57" width="96" height="18" rx="5" transform="rotate(90 57 0)" fill="currentColor"/>
@@ -137,10 +137,6 @@
 
 	<main class="main">
 
-		<header>
-			<a href="../index.html" class="back-arrow" data-back-arrow="true">Index</a>
-		</header>
-
 		<article>
 
 			<section class="intro">
@@ -226,51 +222,7 @@
 
 	</main>
 
-	<script>
-
-			// Hide/show sidebar on mobile
-
-	   function showSidebar() {
-	     var x = document.getElementById("nav-sections");
-	       x.style.display = "flex";
-	     var x = document.getElementById("showButton");
-	       x.style.display = "none";
-	     var x = document.getElementById("hideButton");
-	       x.style.display = "block";
-	     var x = document.getElementById("sidebar");
-	       x.style.height = "100vh";
-	     var x = document.getElementById("main");
-	        // x.style.position = 'fixed';
-	        // x.style.top = `-${window.scrollY}px`;
-
-	       x.style.display = "none"
-	       // x.style.height = "0"
-	       // x.style.overflow = "hidden"
-	       // x.style.display = "hidden"
-	   }
-
-
-	   function hideSidebar() {
-	     var x = document.getElementById("nav-sections");
-	       x.style.display = "none";
-	     var x = document.getElementById("showButton");
-	       x.style.display = "block";
-	     var x = document.getElementById("hideButton");
-	       x.style.display = "none";
-	       var x = document.getElementById("sidebar");
-	         x.style.height = "auto";
-	     var x = document.getElementById("main");
-	        // const scrollY = x.style.top;
-	        // x.style.position = '';
-	        // x.style.top = '';
-	        // window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
-	         x.style.display = "block"
-	         // x.style.height = "auto"
-	         // x.style.overflow = "auto"
-	     }
-
-	  </script>
+	<script src="../script.js"></script>
 
 </body>
 
